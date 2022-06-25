@@ -1,5 +1,6 @@
 <script lang="ts">
   import Card from "../components/Card.svelte";
+  import Hero from "../components/Hero.svelte";
   import ProjectDisplay from "../components/ProjectDisplay.svelte";
   import WorkExperience from "../components/WorkExperience.svelte";
 
@@ -7,12 +8,9 @@
 </script>
 
 <main>
-  <header class="p-4">
-    <h1 class="text-4xl font-bold text-slate-100">Hi, I'm Nick Burt</h1>
-    <h2 class=" text-2xl font-bold text-slate-100">I make things on the web</h2>
-  </header>
+  <section>
+    <Hero />
 
-  <section class="flex-col">
     <Card>
       <p class="my-4">
         I am a full stack developer based in Austin Texas. I have a passion in creating beautiful
