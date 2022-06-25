@@ -1,3 +1,4 @@
+<!-- //TODO: Include when too many projects for featured projects section. -->
 <main>
   <h1>Projects</h1>
 

@@ -1,3 +1,8 @@
+<script lang="ts">
+  import ProjectDisplay from "../components/ProjectDisplay.svelte";
+  import { projects } from "../stores/projectStore";
+</script>
+
 <main>
   <h1>Hi, I'm Nick and I am a Full Stack Web Developer</h1>
 
@@ -8,6 +13,14 @@
 
   <section>
     <h2>Featured Portfolio Project(s)</h2>
+  </section>
+
+  <section>
+    <h2>Work Experience</h2>
+
+    {#each $projects as project, index}
+      <ProjectDisplay item={project} />
+    {/each}
   </section>
 
   <section>

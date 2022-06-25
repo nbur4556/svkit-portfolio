@@ -1,3 +1,4 @@
+<!-- //TODO: Include when I have case studies. -->
 <script lang="ts">
   export let id: string;
 </script>
