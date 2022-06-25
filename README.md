@@ -7,15 +7,15 @@ My portfolio displaying projects, and contact details. Each project shown in the
 ## Table of Contents
 <details open="open">
     <ol>
-        <li><a href="#Installation">Installation</a></li>
-        <li><a href="#Installation">Technologies</a></li>
-        <li><a href="#Installation">Content</a></li>
+        <li><a href="#Setup">Setup</a></li>
+        <li><a href="#Technologies">Technologies</a></li>
+        <li><a href="#Content">Content</a></li>
     </ol>
 </details>
 
-## Installation
+## Setup
 
-Clone from GitHub repository. Navigate to the root directory and run `npm install`.
+Clone this repository and run `npm install` to install the dependencies.
 
 ## Technologies
 
