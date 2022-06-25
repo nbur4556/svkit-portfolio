@@ -14,3 +14,6 @@ yarn.lock
 
 # Ignore files for GIT
 **/.git
+
+# Ignore artwork project files
+/artwork

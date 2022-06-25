@@ -1,40 +1,39 @@
 <script lang="ts">
+  import Card from "../components/Card.svelte";
+  import Hero from "../components/Hero.svelte";
+  import Link from "../components/Link.svelte";
   import ProjectDisplay from "../components/ProjectDisplay.svelte";
   import WorkExperience from "../components/WorkExperience.svelte";
+
   import { projects } from "../stores/projectStore";
 </script>
 
-<main>
-  <h1>Hi, I'm Nick and I am a Full Stack Web Developer</h1>
+<main class="flex flex-col items-center">
+  <Hero />
 
-  <p>
-    I am a full stack developer based in Austin Texas. I have a passion in creating beautiful and
-    responsive web applications powered by scalable servers and databases.
-  </p>
-
-  <section>
-    <h2>Featured Portfolio Project(s)</h2>
+  <Card width="8/12">
+    <h2 class="text-2xl font-bold">Featured Portfolio Project(s)</h2>
 
     {#each $projects as project, index}
       <ProjectDisplay item={project} />
     {/each}
-  </section>
+  </Card>
 
-  <section>
-    <h2>Work Experience</h2>
+  <Card width="8/12">
+    <h2 class="text-2xl font-bold">Work Experience</h2>
 
     <WorkExperience title="Melodix">
       Developing a full-stack web application for local musicians.
     </WorkExperience>
-  </section>
+  </Card>
 
-  <section>
-    <h2>Contact Me</h2>
+  <Card width="8/12">
+    <h2 class="text-2xl font-bold">Contact Me</h2>
 
-    <ul>
-      <li><a href="mailto: nbur4556@gmail.com" target="_blank">nbur4556@gmail.com</a></li>
-      <li><a href="https://github.com/nbur4556" target="_blank">Github</a></li>
-      <li><a href="https://www.linkedin.com/in/nick-burt/" target="_blank">Linked In</a></li>
+    <ul class="my-4">
+      <li><Link href="mailto: nbur4556@gmail.com" external>nbur4556@gmail.com</Link></li>
+      <li><Link href="https://github.com/nbur4556" external /></li>
+      <li><Link href="https://www.linkedin.com/in/nick-burt/" external /></li>
     </ul>
-  </section>
+  </Card>
 </main>

@@ -2,7 +2,7 @@
   export let title: string;
 </script>
 
-<section>
-  <h3>{title}</h3>
+<section class="my-4">
+  <h3 class="text-lg font-bold">{title}</h3>
   <p><slot /></p>
 </section>
