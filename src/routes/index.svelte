@@ -7,10 +7,13 @@
 </script>
 
 <main>
-  <section class="h-screen flex-col space-y-4 p-4">
-    <Card>
-      <h1>Hi, I'm Nick and I am a Full Stack Web Developer</h1>
+  <header class="p-4">
+    <h1 class="text-4xl font-bold text-slate-100">Hi, I'm Nick Burt</h1>
+    <h2 class=" text-2xl font-bold text-slate-100">I make things on the web</h2>
+  </header>
 
+  <section class="flex-col p-4">
+    <Card>
       <p>
         I am a full stack developer based in Austin Texas. I have a passion in creating beautiful
         and responsive web applications powered by scalable servers and databases.
@@ -23,6 +26,14 @@
       {#each $projects as project, index}
         <ProjectDisplay item={project} />
       {/each}
+    </Card>
+
+    <Card>
+      <h2>Work Experience</h2>
+
+      <WorkExperience title="Melodix">
+        Developing a full-stack web application for local musicians.
+      </WorkExperience>
     </Card>
 
     <Card>
