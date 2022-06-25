@@ -1,5 +1,6 @@
 <script lang="ts">
   import ProjectDisplay from "../components/ProjectDisplay.svelte";
+  import WorkExperience from "../components/WorkExperience.svelte";
   import { projects } from "../stores/projectStore";
 </script>
 
@@ -13,14 +14,18 @@
 
   <section>
     <h2>Featured Portfolio Project(s)</h2>
+
+    {#each $projects as project, index}
+      <ProjectDisplay item={project} />
+    {/each}
   </section>
 
   <section>
     <h2>Work Experience</h2>
 
-    {#each $projects as project, index}
-      <ProjectDisplay item={project} />
-    {/each}
+    <WorkExperience title="Melodix">
+      Developing a full-stack web application for local musicians.
+    </WorkExperience>
   </section>
 
   <section>
