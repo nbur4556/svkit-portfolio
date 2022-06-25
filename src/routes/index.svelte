@@ -27,9 +27,9 @@
     <h2>Contact Me</h2>
 
     <ul>
-      <li><a href="mailto: nbur4556@gmail.com">nbur4556@gmail.com</a></li>
-      <li><a href="https://github.com/nbur4556">Github</a></li>
-      <li><a href="https://www.linkedin.com/in/nick-burt/">Linked In</a></li>
+      <li><a href="mailto: nbur4556@gmail.com" target="_blank">nbur4556@gmail.com</a></li>
+      <li><a href="https://github.com/nbur4556" target="_blank">Github</a></li>
+      <li><a href="https://www.linkedin.com/in/nick-burt/" target="_blank">Linked In</a></li>
     </ul>
   </section>
 </main>
