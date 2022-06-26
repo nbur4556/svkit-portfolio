@@ -11,7 +11,6 @@
 <main class="flex flex-col items-center">
   <Hero />
 
-  <!-- //! Make sure width can not be overriden by flexbox parent element -->
   <section class="flex flex-row justify-evenly space-x-4 my-4 w-9/12">
     {#each $projects as project, index}
       <ProjectPreview item={project} />

@@ -6,12 +6,12 @@
   export let item: Project;
 </script>
 
-<Card styleClass="w-full">
-  <h3 class="text-lg font-bold">{item.title}</h3>
-  <img class="w-full" src={item.image} alt={item.imageText} />
+<Card styleClass="p-0 w-full">
+  <!-- <h3 class="text-lg font-bold">{item.title}</h3> -->
+  <img class="w-full hover:opacity-60" src={item.image} alt={item.imageText} />
 
-  <p>{item.description}</p>
+  <!-- <p>{item.description}</p> -->
 
-  <Link href={item.websiteLink} external>website</Link>
-  <Link href={item.repoLink} external>repository</Link>
+  <!-- <Link href={item.websiteLink} external>website</Link> -->
+  <!-- <Link href={item.repoLink} external>repository</Link> -->
 </Card>
