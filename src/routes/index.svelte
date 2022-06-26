@@ -6,21 +6,21 @@
   import WorkExperience from "../components/WorkExperience.svelte";
 </script>
 
-<main class="flex flex-col items-center space-y-10">
+<main class="flex flex-col items-center space-y-48">
   <Hero />
 
   <FeaturedProjects />
 
-  <Card styleClass="p-10 w-9/12">
-    <h2 class="text-2xl font-bold">Work Experience</h2>
+  <Card cardClass="w-9/12" headingClass="py-4 px-10" contentClass="p-10">
+    <h2 slot="heading" class="text-2xl font-bold text-slate-100">Work Experience</h2>
 
     <WorkExperience title="Melodix">
       Developing a full-stack web application for local musicians.
     </WorkExperience>
   </Card>
 
-  <Card styleClass="p-10 w-9/12">
-    <h2 class="text-2xl font-bold">Contact Me</h2>
+  <Card cardClass="w-9/12" headingClass="py-4 px-10" contentClass="p-10">
+    <h2 slot="heading" class="text-2xl font-bold text-slate-100">Contact Me</h2>
 
     <ul class="my-4">
       <li><Link href="mailto: nbur4556@gmail.com" external>nbur4556@gmail.com</Link></li>

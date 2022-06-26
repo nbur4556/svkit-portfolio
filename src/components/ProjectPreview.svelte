@@ -10,8 +10,9 @@
   };
 </script>
 
-<Card styleClass="p-0 overflow-hidden">
+<Card cardClass="overflow-hidden">
   <img
+    slot="image"
     class="w-full hover:opacity-60"
     src={item.image}
     alt={item.imageText}

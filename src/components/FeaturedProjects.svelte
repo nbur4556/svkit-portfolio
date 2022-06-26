@@ -9,13 +9,10 @@
 </script>
 
 <section class="flex flex-col space-y-4 w-9/12">
-  <Card styleClass="flex flex-col space-y-4 p-10 h-5/6">
-    <h3 class="text-lg font-bold">{selected.title}</h3>
-    <img
-      class="border-2 rounded w-9/12 self-center border-slate-500"
-      src={selected.image}
-      alt={selected.imageText}
-    />
+  <Card headingClass="py-4 px-10" contentClass="flex flex-col space-y-4 p-10">
+    <h2 slot="heading" class="text-2xl font-bold text-slate-100">{selected.title}</h2>
+
+    <img slot="image" src={selected.image} alt={selected.imageText} />
 
     <p>{selected.description}</p>
     <div class="flex flex-row space-x-10">
