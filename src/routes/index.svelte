@@ -1,21 +1,15 @@
 <script lang="ts">
   import Card from "../components/Card.svelte";
+  import FeaturedProjects from "../components/FeaturedProjects.svelte";
   import Hero from "../components/Hero.svelte";
   import Link from "../components/Link.svelte";
-  import ProjectPreview from "../components/ProjectPreview.svelte";
   import WorkExperience from "../components/WorkExperience.svelte";
-
-  import { projects } from "../stores/projectStore";
 </script>
 
 <main class="flex flex-col items-center">
   <Hero />
 
-  <section class="flex flex-row justify-evenly space-x-4 my-4 w-9/12">
-    {#each $projects as project, index}
-      <ProjectPreview item={project} />
-    {/each}
-  </section>
+  <FeaturedProjects />
 
   <Card styleClass="my-4 w-9/12">
     <h2 class="text-2xl font-bold">Work Experience</h2>
