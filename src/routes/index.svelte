@@ -2,7 +2,7 @@
   import Card from "../components/Card.svelte";
   import Hero from "../components/Hero.svelte";
   import Link from "../components/Link.svelte";
-  import ProjectDisplay from "../components/ProjectDisplay.svelte";
+  import ProjectPreview from "../components/ProjectPreview.svelte";
   import WorkExperience from "../components/WorkExperience.svelte";
 
   import { projects } from "../stores/projectStore";
@@ -11,15 +11,14 @@
 <main class="flex flex-col items-center">
   <Hero />
 
-  <Card width="8/12">
-    <h2 class="text-2xl font-bold">Featured Portfolio Project(s)</h2>
-
+  <!-- //! Make sure width can not be overriden by flexbox parent element -->
+  <section class="flex flex-row justify-evenly space-x-4 my-4 w-9/12">
     {#each $projects as project, index}
-      <ProjectDisplay item={project} />
+      <ProjectPreview item={project} />
     {/each}
-  </Card>
+  </section>
 
-  <Card width="8/12">
+  <Card styleClass="my-4 w-9/12">
     <h2 class="text-2xl font-bold">Work Experience</h2>
 
     <WorkExperience title="Melodix">
@@ -27,7 +26,7 @@
     </WorkExperience>
   </Card>
 
-  <Card width="8/12">
+  <Card styleClass="my-4 w-9/12">
     <h2 class="text-2xl font-bold">Contact Me</h2>
 
     <ul class="my-4">
