@@ -2,9 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
-main {
-    background-image: url('/images/backgroundPattern.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+@layer base {
+    main {
+        background-image: url('/images/backgroundPattern.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
