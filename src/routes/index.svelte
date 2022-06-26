@@ -6,12 +6,12 @@
   import WorkExperience from "../components/WorkExperience.svelte";
 </script>
 
-<main class="flex flex-col items-center">
+<main class="flex flex-col items-center space-y-10">
   <Hero />
 
   <FeaturedProjects />
 
-  <Card styleClass="my-4 w-9/12">
+  <Card styleClass="p-10 w-9/12">
     <h2 class="text-2xl font-bold">Work Experience</h2>
 
     <WorkExperience title="Melodix">
@@ -19,7 +19,7 @@
     </WorkExperience>
   </Card>
 
-  <Card styleClass="my-4 w-9/12">
+  <Card styleClass="p-10 w-9/12">
     <h2 class="text-2xl font-bold">Contact Me</h2>
 
     <ul class="my-4">
