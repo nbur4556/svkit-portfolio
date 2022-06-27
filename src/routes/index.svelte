@@ -5,25 +5,15 @@
   import Link from "../components/Link.svelte";
   import NavigationBar from "../components/NavigationBar.svelte";
   import PageContent from "../components/PageContent.svelte";
-  import WorkExperience from "../components/WorkExperience.svelte";
+  import WorkExperienceList from "../components/WorkExperienceList.svelte";
 </script>
 
 <main>
   <NavigationBar />
   <PageContent>
     <Hero />
-
     <FeaturedProjects />
-
-    <Card cardClass="w-7/12" headingClass="py-4 px-10" contentClass="p-10" testId="work-experience">
-      <h2 slot="heading" id="experience" class="text-2xl font-bold text-slate-100">
-        Work Experience
-      </h2>
-
-      <WorkExperience title="Melodix">
-        Developing a full-stack web application for local musicians.
-      </WorkExperience>
-    </Card>
+    <WorkExperienceList />
 
     <Card cardClass="w-7/12" headingClass="py-4 px-10" contentClass="p-10" testId="contact">
       <h2 slot="heading" id="contact" class="text-2xl font-bold text-slate-100">Contact Me</h2>
