@@ -3,9 +3,10 @@
   export let headingClass: string = "";
   export let imageClass: string = "";
   export let contentClass: string = "";
+  export let testId: string = "";
 </script>
 
-<section class={`rounded overflow-hidden ${cardClass}`}>
+<section class={`rounded overflow-hidden ${cardClass}`} data-cy={testId}>
   {#if $$slots.heading}
     <div class={`bg-slate-800 ${headingClass}`}>
       <slot name="heading" />

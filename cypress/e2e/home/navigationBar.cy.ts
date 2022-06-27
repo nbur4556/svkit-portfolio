@@ -30,14 +30,16 @@ describe("navigation bar", () => {
     });
 
     it("navigation bar collapses on scroll", () => {
-        cy.get("[data-cy=nav-bar]").as("navBar")
+        const collapsed: string = "w-1/12";
+        const notCollapsed: string = "w-1/5";
+        cy.get("[data-cy=nav-bar]").as("navBar");
 
         cy.scrollTo(0, 500);
-        cy.get("@navBar").should("have.class", "w-1/12");
-        cy.get("@navBar").should("not.have.class", "w-1/5");
+        cy.get("@navBar").should("have.class", collapsed);
+        cy.get("@navBar").should("not.have.class", notCollapsed);
 
         cy.scrollTo(0, 0);
-        cy.get("@navBar").should("have.class", "w-1/5");
-        cy.get("@navBar").should("not.have.class", "w-1/12");
+        cy.get("@navBar").should("have.class", notCollapsed);
+        cy.get("@navBar").should("not.have.class", collapsed);
     });
 });

@@ -15,7 +15,7 @@
 
     <FeaturedProjects />
 
-    <Card cardClass="w-7/12" headingClass="py-4 px-10" contentClass="p-10">
+    <Card cardClass="w-7/12" headingClass="py-4 px-10" contentClass="p-10" testId="work-experience">
       <h2 slot="heading" id="experience" class="text-2xl font-bold text-slate-100">
         Work Experience
       </h2>
@@ -25,7 +25,7 @@
       </WorkExperience>
     </Card>
 
-    <Card cardClass="w-7/12" headingClass="py-4 px-10" contentClass="p-10">
+    <Card cardClass="w-7/12" headingClass="py-4 px-10" contentClass="p-10" testId="contact">
       <h2 slot="heading" id="contact" class="text-2xl font-bold text-slate-100">Contact Me</h2>
 
       <ul class="my-4">
