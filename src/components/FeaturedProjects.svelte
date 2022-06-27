@@ -8,9 +8,9 @@
   let selected: Project = $projects[0];
 </script>
 
-<section class="flex flex-col space-y-4 w-9/12">
+<section class="flex flex-col space-y-4 w-7/12">
   <Card headingClass="py-4 px-10" contentClass="flex flex-col space-y-4 p-10">
-    <h2 slot="heading" class="text-2xl font-bold text-slate-100">{selected.title}</h2>
+    <h2 slot="heading" id="featured" class="text-2xl font-bold text-slate-100">{selected.title}</h2>
 
     <img slot="image" src={selected.image} alt={selected.imageText} />
 
