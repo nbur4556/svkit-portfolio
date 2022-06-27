@@ -14,8 +14,8 @@
   ];
 </script>
 
-<nav>
-  <ul>
+<nav class="flex flex-col justify-center fixed top-0 left-0 h-screen w-1/6">
+  <ul class="flex flex-col justify-evenly items-end h-5/6">
     {#each navigationRoutes as route}
       <li>
         <Link href={route.href}>{route.linkText}</Link>
