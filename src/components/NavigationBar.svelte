@@ -5,13 +5,14 @@
   interface NavigationRoute {
     href: string;
     linkText: string;
+    external?: boolean;
   }
 
   const navigationRoutes: Array<NavigationRoute> = [
     { href: paths.featured, linkText: "Featured Projects" },
     { href: paths.experience, linkText: "Work Experience" },
     { href: paths.contact, linkText: "Contact Me" },
-    { href: paths.resume, linkText: "My Resume" },
+    { href: paths.resume, linkText: "My Resume", external: true },
   ];
 
   let scrollY: number;
@@ -25,8 +26,10 @@
   <ul class="flex flex-col justify-evenly items-end h-5/6">
     {#each navigationRoutes as route}
       <li>
-        <Link href={route.href} styleClass="text-slate-100 hover:text-slate-300"
-          >{route.linkText}</Link
+        <Link
+          href={route.href}
+          styleClass="text-slate-100 hover:text-slate-300"
+          external={route.external}>{route.linkText}</Link
         >
       </li>
     {/each}
