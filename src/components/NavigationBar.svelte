@@ -15,7 +15,7 @@
 
   let scrollY: number;
 
-  $: width = scrollY === 0 ? "w-1/6" : "w-1/12";
+  $: width = scrollY === 0 ? "w-1/5" : "w-1/12";
 </script>
 
 <svelte:window bind:scrollY />
