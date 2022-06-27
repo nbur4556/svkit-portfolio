@@ -4,7 +4,10 @@ module.exports = {
   theme: {
     fontFamily: {
       content: ["Open Sans", "sans-serif"]
-    }
+    },
+    transitionProperty: {
+      "width": "width",
+    },
   },
   plugins: [],
 }

@@ -1,39 +1,38 @@
 <script lang="ts">
   import Card from "../components/Card.svelte";
+  import FeaturedProjects from "../components/FeaturedProjects.svelte";
   import Hero from "../components/Hero.svelte";
   import Link from "../components/Link.svelte";
-  import ProjectDisplay from "../components/ProjectDisplay.svelte";
+  import NavigationBar from "../components/NavigationBar.svelte";
+  import PageContent from "../components/PageContent.svelte";
   import WorkExperience from "../components/WorkExperience.svelte";
-
-  import { projects } from "../stores/projectStore";
 </script>
 
-<main class="flex flex-col items-center">
-  <Hero />
+<main>
+  <NavigationBar />
+  <PageContent>
+    <Hero />
 
-  <Card width="8/12">
-    <h2 class="text-2xl font-bold">Featured Portfolio Project(s)</h2>
+    <FeaturedProjects />
 
-    {#each $projects as project, index}
-      <ProjectDisplay item={project} />
-    {/each}
-  </Card>
+    <Card cardClass="w-7/12" headingClass="py-4 px-10" contentClass="p-10" testId="work-experience">
+      <h2 slot="heading" id="experience" class="text-2xl font-bold text-slate-100">
+        Work Experience
+      </h2>
 
-  <Card width="8/12">
-    <h2 class="text-2xl font-bold">Work Experience</h2>
+      <WorkExperience title="Melodix">
+        Developing a full-stack web application for local musicians.
+      </WorkExperience>
+    </Card>
 
-    <WorkExperience title="Melodix">
-      Developing a full-stack web application for local musicians.
-    </WorkExperience>
-  </Card>
+    <Card cardClass="w-7/12" headingClass="py-4 px-10" contentClass="p-10" testId="contact">
+      <h2 slot="heading" id="contact" class="text-2xl font-bold text-slate-100">Contact Me</h2>
 
-  <Card width="8/12">
-    <h2 class="text-2xl font-bold">Contact Me</h2>
-
-    <ul class="my-4">
-      <li><Link href="mailto: nbur4556@gmail.com" external>nbur4556@gmail.com</Link></li>
-      <li><Link href="https://github.com/nbur4556" external /></li>
-      <li><Link href="https://www.linkedin.com/in/nick-burt/" external /></li>
-    </ul>
-  </Card>
+      <ul class="my-4">
+        <li><Link href="mailto: nbur4556@gmail.com" external>nbur4556@gmail.com</Link></li>
+        <li><Link href="https://github.com/nbur4556" external /></li>
+        <li><Link href="https://www.linkedin.com/in/nick-burt/" external /></li>
+      </ul>
+    </Card>
+  </PageContent>
 </main>
