@@ -1,8 +1,9 @@
 <script lang="ts">
   export let title: string;
+  export let timeframe: string;
 </script>
 
-<div class="my-4">
-  <h3 class="text-lg font-bold">{title}</h3>
+<div>
+  <h3 class="text-lg font-bold">{title} <span class="font-normal">({timeframe})</span></h3>
   <p><slot /></p>
 </div>

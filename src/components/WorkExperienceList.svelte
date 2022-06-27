@@ -16,7 +16,7 @@
   <h2 slot="heading" id="experience" class="text-2xl font-bold text-slate-100">Work Experience</h2>
 
   {#each experienceData as experience}
-    <WorkExperience title={experience.title}>
+    <WorkExperience title={experience.title} timeframe={experience.timeframe}>
       {experience.description}
     </WorkExperience>
   {/each}
