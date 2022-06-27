@@ -2,10 +2,12 @@
   import Card from "./Card.svelte";
   import Link from "./Link.svelte";
   import ProjectPreview from "./ProjectPreview.svelte";
-  import { projects } from "../stores/projectStore";
+
   import type { Project } from "../stores/projectStore";
 
-  let selected: Project = $projects[0];
+  export let projectData: Array<Project>;
+
+  let selected: Project = projectData[0];
 </script>
 
 <section class="flex flex-col space-y-4 w-7/12" data-cy="featured-projects">
@@ -26,7 +28,7 @@
   </Card>
 
   <div class="flex flex-row justify-evenly space-x-4 h-40">
-    {#each $projects as project, index}
+    {#each projectData as project, index}
       <ProjectPreview
         item={project}
         selectItem={(item) => (selected = item)}
