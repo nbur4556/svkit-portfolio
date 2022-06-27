@@ -18,7 +18,9 @@
   <ul class="flex flex-col justify-evenly items-end h-5/6">
     {#each navigationRoutes as route}
       <li>
-        <Link href={route.href}>{route.linkText}</Link>
+        <Link href={route.href} styleClass="text-slate-100 hover:text-slate-300"
+          >{route.linkText}</Link
+        >
       </li>
     {/each}
   </ul>
