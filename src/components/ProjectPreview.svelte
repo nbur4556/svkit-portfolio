@@ -4,13 +4,15 @@
 
   export let item: Project;
   export let selectItem: (item: Project) => void;
+  export let testId: string = "";
 
   const handleOnClick = (e: MouseEvent) => {
     selectItem(item);
   };
 </script>
 
-<Card cardClass="overflow-hidden">
+<Card cardClass="overflow-hidden" {testId}>
+  <!-- //! May require double click to select. Can onclick be handled on the card directly? -->
   <img
     slot="image"
     class="w-full hover:opacity-60"
