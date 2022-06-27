@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { onDestroy } from "svelte";
+
   import Card from "../components/Card.svelte";
   import FeaturedProjects from "../components/FeaturedProjects.svelte";
   import Hero from "../components/Hero.svelte";
@@ -6,6 +8,19 @@
   import NavigationBar from "../components/NavigationBar.svelte";
   import PageContent from "../components/PageContent.svelte";
   import WorkExperience from "../components/WorkExperience.svelte";
+  import { projectStore } from "../stores/projectStore";
+
+  import type { Project } from "../stores/projectStore";
+
+  let projectData: Array<Project>;
+
+  const closeProjectStore = projectStore.subscribe((data) => {
+    projectData = data;
+  });
+
+  onDestroy(() => {
+    closeProjectStore();
+  });
 </script>
 
 <main>
@@ -13,7 +28,7 @@
   <PageContent>
     <Hero />
 
-    <FeaturedProjects />
+    <FeaturedProjects {projectData} />
 
     <Card cardClass="w-7/12" headingClass="py-4 px-10" contentClass="p-10" testId="work-experience">
       <h2 slot="heading" id="experience" class="text-2xl font-bold text-slate-100">
