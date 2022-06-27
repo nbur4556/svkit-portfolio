@@ -12,9 +12,15 @@
     { href: paths.experience, linkText: "Work Experience" },
     { href: paths.contact, linkText: "Contact Me" },
   ];
+
+  let scrollY: number;
+
+  $: width = scrollY === 0 ? "w-1/6" : "w-1/12";
 </script>
 
-<nav class="flex flex-col justify-center fixed top-0 left-0 h-screen w-1/6">
+<svelte:window bind:scrollY />
+
+<nav class={`flex flex-col justify-center fixed h-screen ${width} transition-width ease-in-out`}>
   <ul class="flex flex-col justify-evenly items-end h-5/6">
     {#each navigationRoutes as route}
       <li>
