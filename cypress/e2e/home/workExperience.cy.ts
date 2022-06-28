@@ -12,7 +12,7 @@ describe("work experience", () => {
     let unsubscribe;
 
     beforeEach(() => {
-        cy.visit("http://localhost:3000/#experience")
+        cy.visit("/#experience")
         unsubscribe = experienceStore.subscribe(async (v) => experienceData = v);
     });
 
