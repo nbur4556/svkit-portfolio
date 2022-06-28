@@ -27,7 +27,7 @@ describe("featured projects", () => {
     let unsubscribe;
 
     beforeEach(() => {
-        cy.visit("http://localhost:3000/#featured")
+        cy.visit("/#featured")
         unsubscribe = projectStore.subscribe(async (v) => projectData = v);
     });
 

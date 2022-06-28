@@ -7,19 +7,27 @@
   import Link from "../components/Link.svelte";
   import NavigationBar from "../components/NavigationBar.svelte";
   import PageContent from "../components/PageContent.svelte";
-  import WorkExperience from "../components/WorkExperience.svelte";
+  import WorkExperienceList from "../components/WorkExperienceList.svelte";
   import { projectStore } from "../stores/projectStore";
+  import { experienceStore } from "../stores/experienceStore";
 
   import type { Project } from "../stores/projectStore";
+  import type { Experience } from "../stores/experienceStore";
 
+  let experienceData: Array<Experience>;
   let projectData: Array<Project>;
 
   const closeProjectStore = projectStore.subscribe((data) => {
     projectData = data;
   });
 
+  const closeExperienceStore = experienceStore.subscribe((data) => {
+    experienceData = data;
+  });
+
   onDestroy(() => {
     closeProjectStore();
+    closeExperienceStore();
   });
 </script>
 
@@ -27,18 +35,8 @@
   <NavigationBar />
   <PageContent>
     <Hero />
-
     <FeaturedProjects {projectData} />
-
-    <Card cardClass="w-7/12" headingClass="py-4 px-10" contentClass="p-10" testId="work-experience">
-      <h2 slot="heading" id="experience" class="text-2xl font-bold text-slate-100">
-        Work Experience
-      </h2>
-
-      <WorkExperience title="Melodix">
-        Developing a full-stack web application for local musicians.
-      </WorkExperience>
-    </Card>
+    <WorkExperienceList {experienceData} />
 
     <Card cardClass="w-7/12" headingClass="py-4 px-10" contentClass="p-10" testId="contact">
       <h2 slot="heading" id="contact" class="text-2xl font-bold text-slate-100">Contact Me</h2>
