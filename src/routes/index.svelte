@@ -8,17 +8,25 @@
   import NavigationBar from "../components/NavigationBar.svelte";
   import PageContent from "../components/PageContent.svelte";
   import WorkExperienceList from "../components/WorkExperienceList.svelte";
+  import { projectStore } from "../stores/projectStore";
   import { experienceStore } from "../stores/experienceStore";
 
+  import type { Project } from "../stores/projectStore";
   import type { Experience } from "../stores/experienceStore";
 
   let experienceData: Array<Experience>;
+  let projectData: Array<Project>;
+
+  const closeProjectStore = projectStore.subscribe((data) => {
+    projectData = data;
+  });
 
   const closeExperienceStore = experienceStore.subscribe((data) => {
     experienceData = data;
   });
 
   onDestroy(() => {
+    closeProjectStore();
     closeExperienceStore();
   });
 </script>
@@ -27,8 +35,7 @@
   <NavigationBar />
   <PageContent>
     <Hero />
-    <FeaturedProjects />
-    <!-- //TODO: Work Experience Tests -->
+    <FeaturedProjects {projectData} />
     <WorkExperienceList {experienceData} />
 
     <Card cardClass="w-7/12" headingClass="py-4 px-10" contentClass="p-10" testId="contact">
