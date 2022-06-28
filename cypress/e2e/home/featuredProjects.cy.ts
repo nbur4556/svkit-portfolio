@@ -1,4 +1,4 @@
-import { projects } from "../../../src/stores/projectStore";
+import { projectStore } from "../../../src/stores/projectStore";
 import type { Project } from "../../../src/stores/projectStore";
 
 const testSelectProjectData = (project: Project) => {
@@ -27,8 +27,8 @@ describe("featured projects", () => {
     let unsubscribe;
 
     beforeEach(() => {
-        cy.visit("http://localhost:3000/#featured")
-        unsubscribe = projects.subscribe(async (v) => projectData = v);
+        cy.visit("/#featured")
+        unsubscribe = projectStore.subscribe(async (v) => projectData = v);
     });
 
     afterEach(() => unsubscribe());

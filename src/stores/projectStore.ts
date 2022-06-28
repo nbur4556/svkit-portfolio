@@ -28,4 +28,4 @@ const projectsData: Array<Project> = [
     },
 ];
 
-export const projects = readable(projectsData);
+export const projectStore = readable(projectsData);

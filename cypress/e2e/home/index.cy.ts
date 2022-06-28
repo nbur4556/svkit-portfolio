@@ -1,10 +1,10 @@
 describe('landing page', () => {
     it("can navigate to landing page", () => {
-        cy.visit("http://localhost:3000/");
+        cy.visit("/");
     });
 
     it("landing page content includes required sections", () => {
-        cy.visit("http://localhost:3000/");
+        cy.visit("/");
 
         cy.get("[data-cy=hero]").should("exist");
         cy.get("[data-cy=nav-bar]").should("exist");

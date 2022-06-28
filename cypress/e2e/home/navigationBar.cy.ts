@@ -7,7 +7,7 @@ const navRoutes = [
 ];
 
 describe("navigation bar", () => {
-    beforeEach(() => cy.visit("http://localhost:3000/"));
+    beforeEach(() => cy.visit("/"));
 
     it("navigation bar displays link text", () => {
         navRoutes.forEach((route) => {
