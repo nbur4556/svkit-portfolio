@@ -1,22 +1,8 @@
 <script lang="ts">
-  import Link from "./Link.svelte";
-  import { paths } from "../util/paths";
-
-  interface NavigationRoute {
-    href: string;
-    linkText: string;
-    external?: boolean;
-  }
-
-  const navigationRoutes: Array<NavigationRoute> = [
-    { href: paths.featured, linkText: "Featured Projects" },
-    { href: paths.experience, linkText: "Work Experience" },
-    { href: paths.contact, linkText: "Contact Me" },
-    { href: paths.resume, linkText: "My Resume", external: true },
-  ];
+  import Link from "../Link.svelte";
+  import navigationRoutes from "./navigationRoutes";
 
   let scrollY: number;
-
   $: width = scrollY === 0 ? "w-1/5" : "w-1/12";
 </script>
 
