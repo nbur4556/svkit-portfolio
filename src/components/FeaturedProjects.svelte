@@ -23,7 +23,7 @@
   </div>
 </Card>
 
-<div class="flex flex-row justify-evenly space-x-4 h-40">
+<div class="flex flex-row justify-evenly space-x-4 h-40" data-cy="preview-feature">
   {#each projectData as project, index}
     <ProjectPreview
       item={project}
