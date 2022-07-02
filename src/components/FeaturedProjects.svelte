@@ -10,7 +10,7 @@
   let selected: Project = projectData[0];
 </script>
 
-<section class="flex flex-col space-y-4 w-7/12" data-cy="featured-projects">
+<section class="mx-4 flex flex-col space-y-4 lg:w-7/12 md:mx-10" data-cy="featured-projects">
   <Card
     headingClass="py-4 px-10"
     contentClass="flex flex-col space-y-4 p-10"
