@@ -8,7 +8,8 @@ describe('landing page', () => {
 
         cy.get("[data-cy=hero]").should("exist");
         cy.get("[data-cy=nav-bar]").should("exist");
-        cy.get("[data-cy=featured-projects]").should("exist");
+        cy.get("[data-cy=select-feature]").should("exist");
+        cy.get("[data-cy=preview-feature]").should("exist");
         cy.get("[data-cy=work-experience]").should("exist");
         cy.get("[data-cy=contact]").should("exist");
     });

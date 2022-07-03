@@ -1,23 +1,11 @@
 <script lang="ts">
-  import Link from "./Link.svelte";
-  import { paths } from "../util/paths";
-
-  interface NavigationRoute {
-    href: string;
-    linkText: string;
-    external?: boolean;
-  }
-
-  const navigationRoutes: Array<NavigationRoute> = [
-    { href: paths.featured, linkText: "Featured Projects" },
-    { href: paths.experience, linkText: "Work Experience" },
-    { href: paths.contact, linkText: "Contact Me" },
-    { href: paths.resume, linkText: "My Resume", external: true },
-  ];
+  import Icon from "../Icon.svelte";
+  import Link from "../Link.svelte";
+  import navigationRoutes from "./navigationRoutes";
 
   let scrollY: number;
-
   $: width = scrollY === 0 ? "w-1/5" : "w-1/12";
+  $: displayLinkText = scrollY === 0;
 </script>
 
 <svelte:window bind:scrollY />
@@ -33,8 +21,16 @@
           href={route.href}
           styleClass="text-slate-100 hover:text-slate-300"
           external={route.external}
-          testId={route.linkText + "-link"}>{route.linkText}</Link
+          testId={route.linkText + "-link"}
         >
+          {displayLinkText ? route.linkText : ""}
+          <Icon
+            name={route.linkIcon}
+            tooltip={route.linkText}
+            size="2xl"
+            styleClass="px-4 align-middle hover:text-slate-300"
+          />
+        </Link>
       </li>
     {/each}
   </ul>
