@@ -1,5 +1,6 @@
 <script lang="ts">
   import Card from "../components/Card.svelte";
+  import PageSection from "./PageSection.svelte";
   import WorkExperience from "../components/WorkExperience.svelte";
 
   import type { Experience } from "../stores/experienceStore";
@@ -8,7 +9,6 @@
 </script>
 
 <Card
-  cardClass="w-7/12"
   headingClass="py-4 px-10"
   contentClass="flex flex-col space-y-16 p-10"
   testId="work-experience"
