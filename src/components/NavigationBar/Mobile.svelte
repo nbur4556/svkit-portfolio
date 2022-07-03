@@ -14,9 +14,12 @@
     <ul class="flex flex-col">
       {#each navigationRoutes as route}
         <li class="my-4">
+          <i
+            class={`fa-solid ${route.linkIcon} text-xl align-middle text-slate-200 hover:text-slate-300`}
+          />
           <Link
             href={route.href}
-            styleClass="text-slate-100 hover:text-slate-300"
+            styleClass="px-4 text-slate-100 hover:text-slate-300"
             external={route.external}
             testId={route.linkText + "-link"}>{route.linkText}</Link
           >
