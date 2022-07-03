@@ -4,6 +4,7 @@
 
   let scrollY: number;
   $: width = scrollY === 0 ? "w-1/5" : "w-1/12";
+  $: displayLinkText = scrollY === 0;
 </script>
 
 <svelte:window bind:scrollY />
@@ -19,8 +20,13 @@
           href={route.href}
           styleClass="text-slate-100 hover:text-slate-300"
           external={route.external}
-          testId={route.linkText + "-link"}>{route.linkText}</Link
+          testId={route.linkText + "-link"}
         >
+          {displayLinkText ? route.linkText : ""}
+          <i
+            class={`fa-solid ${route.linkIcon} px-4 text-2xl align-middle text-slate-200 hover:text-slate-300`}
+          />
+        </Link>
       </li>
     {/each}
   </ul>
