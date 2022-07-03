@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Icon from "../Icon.svelte";
   import Link from "../Link.svelte";
   import navigationRoutes from "./navigationRoutes";
 
@@ -23,8 +24,11 @@
           testId={route.linkText + "-link"}
         >
           {displayLinkText ? route.linkText : ""}
-          <i
-            class={`fa-solid ${route.linkIcon} px-4 text-2xl align-middle text-slate-200 hover:text-slate-300`}
+          <Icon
+            name={route.linkIcon}
+            tooltip={route.linkText}
+            size="2xl"
+            styleClass="px-4 align-middle hover:text-slate-300"
           />
         </Link>
       </li>

@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Icon from "../Icon.svelte";
   import Link from "../Link.svelte";
   import navigationRoutes from "./navigationRoutes";
 
@@ -14,15 +15,15 @@
     <ul class="flex flex-col">
       {#each navigationRoutes as route}
         <li class="my-4">
-          <i
-            class={`fa-solid ${route.linkIcon} text-xl align-middle text-slate-200 hover:text-slate-300`}
-          />
+          <Icon tooltip={route.linkText} name={route.linkIcon || ""} />
           <Link
             href={route.href}
             styleClass="px-4 text-slate-100 hover:text-slate-300"
             external={route.external}
-            testId={route.linkText + "-link"}>{route.linkText}</Link
+            testId={route.linkText + "-link"}
           >
+            {route.linkText}
+          </Link>
         </li>
       {/each}
     </ul>
