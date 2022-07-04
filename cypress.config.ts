@@ -1,6 +1,12 @@
 import { defineConfig } from "cypress";
 
 export default defineConfig({
+  screenshotsFolder: "./cypress/snapshots/actual",
+  trashAssetsBeforeRuns: true,
+  env: {
+    SNAPSHOT_BASE_DIRECTORY: "./cypress/snapshots/base",
+    SNAPSHOT_DIFF_DIRECTORY: "./cypress/snapshots/diff",
+  },
   e2e: {
     baseUrl: "http://localhost:3000",
     video: false,
