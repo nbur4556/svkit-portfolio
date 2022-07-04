@@ -1,4 +1,5 @@
 import { defineConfig } from "cypress";
+import getCompareSnapshotsPlugin from "cypress-visual-regression/dist/plugin";
 
 export default defineConfig({
   screenshotsFolder: "./cypress/snapshots/actual",
@@ -13,7 +14,7 @@ export default defineConfig({
     viewportWidth: 1920,
     viewportHeight: 1080,
     setupNodeEvents(on, config) {
-      // implement node event listeners here
+      getCompareSnapshotsPlugin(on, config);
     },
   },
 });

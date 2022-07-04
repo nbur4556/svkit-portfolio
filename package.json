@@ -11,7 +11,8 @@
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
 		"format": "prettier --write --plugin-search-dir=. .",
 		"test:open": "cypress open",
-		"test:run": "cypress run"
+		"test:run": "cypress run --env type=actual",
+		"test:update": "cypress run --env type=base"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
