@@ -25,7 +25,7 @@
         >
           {displayLinkText ? route.linkText : ""}
           <Icon
-            name={route.linkIcon}
+            name={route.linkIcon || ""}
             tooltip={route.linkText}
             size="2xl"
             styleClass="px-4 align-middle hover:text-slate-300"
