@@ -12,3 +12,5 @@ node_modules
 # Cypress
 /cypress/videos
 /cypress/screenshots
+/cypress/snapshots/actual
+/cypress/snapshots/diff
