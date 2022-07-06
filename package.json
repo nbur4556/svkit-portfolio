@@ -12,7 +12,8 @@
 		"format": "prettier --write --plugin-search-dir=. .",
 		"test:open": "cypress open",
 		"test:run": "cypress run --env type=actual --browser chrome",
-		"test:update": "cypress run --env type=base --browser chrome"
+		"test:snapshot": "cypress run --env type=actual --browser chrome --spec cypress/e2e/regression.cy.ts",
+		"test:update": "cypress run --env type=base --browser chrome --spec cypress/e2e/regression.cy.ts"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
