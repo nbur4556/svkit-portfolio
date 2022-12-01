@@ -13,7 +13,7 @@ const projectsData: Array<Project> = [
     {
         title: "Dev Issue Tracker",
         description: "Dev Issue Tracker is a resource for organizing bugs, issues, and features on development projects. The application features robust state management implementing React's Context API, making state easily accessible across the various components of the project.",
-        websiteLink: "https://devissuetracking.herokuapp.com/",
+        websiteLink: "https://dev-issue-tracker.onrender.com",
         repoLink: "https://github.com/nbur4556/issue_reporter",
         image: "/images/projects/dev-issue-main.png",
         imageText: "Dev Issue lading page",
