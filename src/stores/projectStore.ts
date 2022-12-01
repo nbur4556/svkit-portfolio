@@ -22,7 +22,7 @@ const projectsData: Array<Project> = [
         title: "SurvEasy",
         description: "SurvEasy makes it easy to know what your target market is thinking. The application provides a simple solution for creating and providing surveys to your intended audience. This project is built with a React client, and Node JS for the server. In creating SurvEasy, I was able to provide a secure and full featured user authorization process involving encrypted passwords, and JSON web tokens for authentication. Users can create and provide surveys with a dedicated link, and data and analytics from the surveys are provided using Chart.js to display on the front end.",
         websiteLink: "https://surveasy.herokuapp.com/",
-        repoLink: "https://github.com/Sakiskid/Surveasy",
+        repoLink: "https://github.com/nbur4556/Surveasy",
         image: "/images/projects/surveasy-main.png",
         imageText: "Surveasy landing Page",
     },
