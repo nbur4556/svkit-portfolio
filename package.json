@@ -11,13 +11,16 @@
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
 		"format": "prettier --write --plugin-search-dir=. .",
 		"test:open": "cypress open",
-		"test:run": "cypress run"
+		"test:run": "cypress run --env type=actual --browser chrome",
+		"test:snapshot": "cypress run --env type=actual --browser chrome --spec cypress/e2e/regression.cy.ts",
+		"test:update": "cypress run --env type=base --browser chrome --spec cypress/e2e/regression.cy.ts"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
 		"@sveltejs/kit": "next",
 		"autoprefixer": "^10.4.7",
 		"cypress": "^10.2.0",
+		"cypress-visual-regression": "^1.7.0",
 		"postcss": "^8.4.14",
 		"prettier": "^2.6.2",
 		"prettier-plugin-svelte": "^2.7.0",
