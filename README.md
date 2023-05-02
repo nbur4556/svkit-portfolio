@@ -16,7 +16,7 @@ My portfolio displaying projects, and contact details. Each project shown in the
 
 ## Setup
 
-Clone this repository and run `npm install` to install the dependencies.
+Clone this repository and run `yarn install` to install the dependencies.
 
 ## Technologies
 
