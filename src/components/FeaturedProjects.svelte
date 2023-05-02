@@ -1,7 +1,6 @@
 <script lang="ts">
   import Card from "./Card.svelte";
   import Link from "./Link.svelte";
-  import PageSection from "./PageSection.svelte";
   import ProjectPreview from "./ProjectPreview.svelte";
 
   import type { Project } from "../stores/projectStore";
