@@ -1,6 +1,7 @@
 # SVKit Portfolio
 
 ## Table of Contents
+
 <details open="open">
     <ol>
         <li><a href="#Description">Description</a></li>
@@ -20,13 +21,13 @@ Clone this repository and run `yarn install` to install the dependencies.
 
 ## Technologies
 
- - SvelteKit
- - Tailwind
- - Cypress
+- SvelteKit
+- Tailwind
+- Cypress
 
- ## Contact
+## Contact
 
- Contact me at:
+Contact me at:
 
- - nbur4556@gmail.com
- - https://github.com/nbur4556
+- nbur4556@gmail.com
+- https://github.com/nbur4556
