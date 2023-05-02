@@ -7,7 +7,7 @@
         <li><a href="#Description">Description</a></li>
         <li><a href="#Setup">Setup</a></li>
         <li><a href="#Technologies">Technologies</a></li>
-        <li><a href="#Content">Content</a></li>
+        <li><a href="#Contact">Contact</a></li>
     </ol>
 </details>
 
