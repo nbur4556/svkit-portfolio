@@ -9,7 +9,7 @@
 </script>
 
 <nav class="p-5 fixed bg-gray-900/90" data-cy="nav-bar">
-  <i class="fa-solid fa-bars text-4xl text-slate-200" on:click={toggleDisplayLinks} />
+  <button class="fa-solid fa-bars text-4xl text-slate-200" on:click={toggleDisplayLinks} />
 
   {#if displayLinks}
     <ul class="flex flex-col">

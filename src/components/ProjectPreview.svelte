@@ -7,7 +7,6 @@
   export let testId: string = "";
 
   const handleOnClick = () => {
-    console.log("clicked");
     selectItem(item);
   };
 </script>
