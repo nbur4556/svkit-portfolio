@@ -24,8 +24,16 @@ describe("work experience", () => {
 
       cy.get("[data-cy=work-experience]")
         .should("contain.text", experience.title)
-        .should("contain.text", experience.description)
-        .should("contain.text", `(${monthDiff}m)`);
+        .should("contain.text", experience.description);
+
+      if (monthDiff >= 12) {
+        cy.get("[data-cy=work-experience]").should(
+          "contain.text",
+          `(${Math.floor(monthDiff / 12)}y)`
+        );
+      } else {
+        cy.get("[data-cy=work-experience]").should("contain.text", `(${monthDiff}m)`);
+      }
     });
   });
 });

@@ -40,15 +40,17 @@ describe("featured projects", () => {
       cy.get(`[data-cy=preview-${index}]`).should("be.visible");
       cy.get(`[data-cy=preview-${index}-image]`)
         .children()
+        .children()
         .should("have.attr", "src", project.image)
         .should("have.attr", "alt", project.imageText);
     });
   });
 
   it("selecting project preview populates project details", () => {
-    //TODO: Resolve double click issue
     projectData.forEach((project, index: number) => {
-      cy.get(`[data-cy=preview-${index}]`).click().click();
+      cy.get(`[data-cy=preview-${index}-button]`).click();
+      // Adding timeout to the next selector does not update ui. Need specifically give time to click and for ui to update.
+      cy.wait(1000);
       testSelectProjectData(project);
     });
   });
