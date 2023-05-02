@@ -1,6 +1,6 @@
 export const paths = {
-    featured: "#featured",
-    experience: "#experience",
-    contact: "#contact",
-    resume: "/resume.pdf",
+  featured: "#featured",
+  experience: "#experience",
+  contact: "#contact",
+  resume: "/resume.pdf",
 };

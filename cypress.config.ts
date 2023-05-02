@@ -12,7 +12,7 @@ export default defineConfig({
     ALWAYS_GENERATE_DIFF: false,
   },
   e2e: {
-    baseUrl: "http://localhost:3000",
+    baseUrl: "http://localhost:5173",
     video: false,
     viewportWidth: 1920,
     viewportHeight: 1080,
