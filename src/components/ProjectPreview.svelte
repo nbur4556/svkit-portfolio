@@ -6,7 +6,7 @@
   export let selectItem: (item: Project) => void;
   export let testId: string = "";
 
-  const handleOnClick = (e: MouseEvent) => {
+  const handleOnClick = () => {
     selectItem(item);
   };
 </script>
