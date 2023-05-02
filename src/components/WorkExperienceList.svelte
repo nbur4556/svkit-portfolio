@@ -1,6 +1,5 @@
 <script lang="ts">
   import Card from "../components/Card.svelte";
-  import PageSection from "./PageSection.svelte";
   import WorkExperience from "../components/WorkExperience.svelte";
 
   import type { Experience } from "../stores/experienceStore";
