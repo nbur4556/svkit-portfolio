@@ -14,3 +14,5 @@ node_modules
 /cypress/screenshots
 /cypress/snapshots/actual
 /cypress/snapshots/diff
+
+.vscode
