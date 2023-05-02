@@ -1,12 +1,14 @@
 <!-- //TODO: Include when I have case studies. -->
 <script lang="ts">
-  throw new Error("@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)");
+  import type { PageData } from './$types';
 
-  export let id: string;
+  export let data: PageData;
+
+  console.log(data);
 </script>
 
 <main>
-  <h1>Project: {id}</h1>
+  <h1>Project: {data.id}</h1>
 
   <section>
     <h2>Project Case Study</h2>
