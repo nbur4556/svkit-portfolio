@@ -10,8 +10,13 @@ export interface Experience {
 const experienceData: Array<Experience> = [
   {
     title: "Melodix",
-    description: "Developing full-stack technology for musicians and music lovers.",
+    description: "Creating full-stack technology for musicians and music lovers.",
     startDate: new Date(2022, 4),
+  },
+  {
+    title: "CypherEye",
+    description: "Developed a mobile messaging and authentication app using React Native.",
+    startDate: new Date(2022, 11)
   },
   {
     title: "Retrospective",
