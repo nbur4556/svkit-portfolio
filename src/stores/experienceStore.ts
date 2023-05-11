@@ -16,19 +16,19 @@ const experienceData: Array<Experience> = [
   {
     title: "CypherEye",
     description: "Developed a mobile messaging and authentication app using React Native.",
-    startDate: new Date(2022, 11)
-  },
-  {
-    title: "Retrospective",
-    description: "Built a custom Shopify theme and content management system.",
-    startDate: new Date(2021, 5),
-    endDate: new Date(2022, 3),
+    startDate: new Date(2022, 9)
   },
   {
     title: "WePair",
     description: "Produced a full featured SaaS payment system using Stripe and Paypal.",
     startDate: new Date(2021, 7),
     endDate: new Date(2021, 12),
+  },
+  {
+    title: "Retrospective",
+    description: "Built a custom Shopify theme and content management system.",
+    startDate: new Date(2021, 9),
+    endDate: new Date(2022, 3),
   },
 ];
 
