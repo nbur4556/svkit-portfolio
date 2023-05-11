@@ -1,5 +1,6 @@
 <script lang="ts">
   export let title: string;
+  export let position: string;
   export let startDate: Date;
   export let endDate: Date | undefined = undefined;
 
@@ -15,7 +16,7 @@
 
 <div>
   <h3 class="text-lg font-bold">
-    {title} <span class="font-normal">({duration})</span>
+    {title} <span class="font-normal">- {position} ({duration})</span>
   </h3>
   <p><slot /></p>
 </div>

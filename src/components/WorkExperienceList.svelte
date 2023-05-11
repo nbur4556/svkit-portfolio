@@ -17,6 +17,7 @@
   {#each experienceData as experience}
     <WorkExperience
       title={experience.title}
+      position={experience.position}
       startDate={experience.startDate}
       endDate={experience.endDate}
     >
