@@ -14,7 +14,7 @@ const projectsData: Array<Project> = [
     title: "Lamplist Jobs",
     description: "Lamplist Jobs helps structure and organize your job search. Using the lamplist method, keep track of job applications and find open positions.",
     websiteLink: "https://lamplist.nickburt.dev",
-    repoLink: "https://github.com/nbur45556/lamplist_jobs",
+    repoLink: "https://github.com/nbur4556/lamplist-jobs",
     image: "/images/projects/lamplist-jobs-main.png",
     imageText: "Lamplist Jobs landing page",
   },
