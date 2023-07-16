@@ -4,9 +4,6 @@
 
 @layer base {
   main {
-    background-image: url("/images/backgroundPattern.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #112530;
+    background-color: #253031;
   }
 }
