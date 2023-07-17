@@ -19,7 +19,7 @@ const experienceData: Array<Experience> = [
     title: "CypherEye",
     position: "Mobile Developer",
     description: "Developed a mobile messaging and authentication app using React Native.",
-    startDate: new Date(2022, 9)
+    startDate: new Date(2022, 9),
   },
   {
     title: "WePair",
