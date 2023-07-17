@@ -11,6 +11,14 @@ export interface Project {
 
 const projectsData: Array<Project> = [
   {
+    title: "Lamplist Jobs",
+    description: "Lamplist Jobs helps structure and organize your job search. Using the lamplist method, keep track of job applications and find open positions.",
+    websiteLink: "https://lamplist.nickburt.dev",
+    repoLink: "https://github.com/nbur4556/lamplist-jobs",
+    image: "/images/projects/lamplist-jobs-main.png",
+    imageText: "Lamplist Jobs landing page",
+  },
+  {
     title: "Dev Issue Tracker",
     description:
       "Dev Issue Tracker is a resource for organizing bugs, issues, and features on development projects. The application features robust state management implementing React's Context API, making state easily accessible across the various components of the project.",
