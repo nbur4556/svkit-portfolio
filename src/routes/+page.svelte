@@ -31,7 +31,7 @@
   });
 </script>
 
-<main class="bg-brand-900">
+<main class="flex flex-col items-center bg-brand-900">
   <NavigationBar />
   <PageContent>
     <Hero />
