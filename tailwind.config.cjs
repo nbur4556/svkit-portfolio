@@ -12,8 +12,17 @@ module.exports = {
     extend: {
       colors: {
         brand: {
-          500: "#150E27",
+          900: "#150E27",
         },
+        link: {
+          100: "#E2E4F3",
+          200: "#C5CAE7",
+          300: "#9CA4D7",
+        },
+      },
+      //TODO: Replace with theme sizes (sm, md lg)
+      margin: {
+        "48px": "48px",
       }
     }
   },

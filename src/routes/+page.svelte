@@ -31,7 +31,7 @@
   });
 </script>
 
-<main class="bg-brand-500">
+<main class="bg-brand-900">
   <NavigationBar />
   <PageContent>
     <Hero />
