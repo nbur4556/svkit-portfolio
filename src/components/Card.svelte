@@ -1,25 +1,22 @@
 <script lang="ts">
-  export let cardClass: string = "";
-  export let headingClass: string = "";
-  export let imageClass: string = "";
-  export let contentClass: string = "";
   export let testId: string = "";
 </script>
 
-<section class={`rounded overflow-hidden ${cardClass}`} data-cy={testId}>
+<section class="flex flex-col gap-60px m-10 p-74px bg-dark rounded-3xl" data-cy={testId}>
   {#if $$slots.heading}
-    <div class={`bg-slate-800 ${headingClass}`} data-cy={`${testId}-heading`}>
+    <div class="text-white" data-cy={`${testId}-heading`}>
       <slot name="heading" />
     </div>
   {/if}
 
+  <!-- //TODO: Will we be able to remove the image section? -->
   {#if $$slots.image}
-    <div class={`bg-slate-200 ${imageClass}`} data-cy={`${testId}-image`}>
+    <div data-cy={`${testId}-image`}>
       <slot name="image" />
     </div>
   {/if}
 
-  <div class={`bg-slate-200 ${contentClass}`} data-cy={`${testId}-content`}>
+  <div class="text-body" data-cy={`${testId}-content`}>
     <slot />
   </div>
 </section>

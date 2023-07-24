@@ -10,8 +10,8 @@
   let selected: Project = projectData[0];
 </script>
 
-<Card headingClass="py-4 px-10" contentClass="flex flex-col space-y-4 p-10" testId="select-feature">
-  <h2 slot="heading" id="featured" class="text-2xl font-bold text-slate-100">{selected.title}</h2>
+<Card testId="select-feature">
+  <h2 slot="heading" id="featured" class="text-2xl font-bold">{"> My Projects"}</h2>
 
   <img slot="image" src={selected.image} alt={selected.imageText} />
 

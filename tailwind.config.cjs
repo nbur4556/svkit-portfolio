@@ -1,9 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 
 const colors = {
+  accent1: "#0FFEFF",
+  accent2: "#1960F7",
+  accent3: "#FE15FE",
+  body: "#607B96",
   brand: {
     900: "#150E27",
   },
+  dark: "#0E081A",
   link: {
     200: "#C5CAE7",
     300: "#9CA4D7",
@@ -14,6 +19,8 @@ const colors = {
 const sizes = {
   "15px": "15px",
   "48px": "48px",
+  "60px": "60px",
+  "74px": "74px",
   "130px": "130px",
   "404px": "404px",
   "686px": "686px",
@@ -37,7 +44,7 @@ module.exports = {
       padding: sizes,
       text: sizes,
       width: sizes,
-    }
+    },
   },
   plugins: [],
 };

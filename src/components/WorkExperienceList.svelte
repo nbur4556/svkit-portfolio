@@ -7,12 +7,8 @@
   export let experienceData: Array<Experience>;
 </script>
 
-<Card
-  headingClass="py-4 px-10"
-  contentClass="flex flex-col space-y-16 p-10"
-  testId="work-experience"
->
-  <h2 slot="heading" id="experience" class="text-2xl font-bold text-slate-100">Work Experience</h2>
+<Card testId="work-experience">
+  <h2 slot="heading" id="experience" class="text-2xl font-bold">{">Work Experience"}</h2>
 
   {#each experienceData as experience}
     <WorkExperience
