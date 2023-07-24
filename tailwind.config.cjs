@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: ["./src/**/*.{html,js,svelte,ts}"],
   theme: {
@@ -8,6 +9,13 @@ module.exports = {
     transitionProperty: {
       width: "width",
     },
+    extend: {
+      colors: {
+        brand: {
+          500: "#150E27",
+        },
+      }
+    }
   },
   plugins: [],
 };
