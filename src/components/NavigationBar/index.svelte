@@ -21,7 +21,7 @@
           <Link
             href={route.href}
             styleClass={$page.url.hash === route.href
-              ? `text-accent3`
+              ? `text-accent3-400`
               : "text-link-300 hover:text-link-200"}
             external={route.external}
             testId={route.linkText + "-link"}

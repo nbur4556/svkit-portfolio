@@ -33,8 +33,8 @@
         Message
         <input class="border-b border-neutral p-15px bg-transparent text-white" type="text" />
       </label>
-      <!-- //TODO: gradient background -->
-      <button class="self-start px-40px py-12px bg-accent1-400 hover:bg-accent1-600 rounded-full"
+      <button
+        class="self-start px-40px py-12px rounded-full bg-gradient-to-r from-accent3-400 to-accent1-400 hover:from-accent3-300 hover:to-accent1-300"
         >Send</button
       >
     </form>

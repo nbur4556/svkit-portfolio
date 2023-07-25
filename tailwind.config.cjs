@@ -9,7 +9,10 @@ const colors = {
     600: "#00CCCC",
   },
   accent2: "#1960F7",
-  accent3: "#FE15FE",
+  accent3: {
+    300: "#FE48FE",
+    400: "#FE15FE", //default
+  },
   body: "#607B96",
   brand: {
     900: "#150E27", // default
@@ -53,10 +56,10 @@ module.exports = {
     fontFamily: {
       content: ["Fira Code", "monospace"],
     },
-    transitionProperty: {
-      spacing: "margin, padding",
-    },
     extend: {
+      transitionProperty: {
+        spacing: "margin, padding",
+      },
       colors: colors,
       gap: sizes,
       height: sizes,
