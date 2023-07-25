@@ -3,6 +3,7 @@
 
   import Contact from "../components/Contact.svelte";
   import FeaturedProjects from "../components/FeaturedProjects.svelte";
+  import Footer from "../components/Footer.svelte";
   import Hero from "../components/Hero.svelte";
   import NavigationBar from "../components/NavigationBar/index.svelte";
   import PageContent from "../components/PageContent.svelte";
@@ -44,3 +45,4 @@
     <Contact />
   </PageSection>
 </PageContent>
+<Footer />
