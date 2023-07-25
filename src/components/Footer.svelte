@@ -1,10 +1,19 @@
-<footer class="flex flex-row justify-between mb-150px max-w-1220px w-full text-white">
-  <p>Copyright 2023</p>
+<script lang="ts">
+  import SocialLink from "../components/SocialLink.svelte";
 
-  <section class="flex flex-row">
-    <p>|Github</p>
-    <p>|Linked In</p>
-    <p>|Threads</p>
-    <p>|Twitter</p>
+  const socialData = [ 
+    {name: "GitHub", iconPath: "/images/social/github-mark-white.png", route: "https://github.com/nbur4556"},
+    {name: "Linked In", iconPath: "/images/social/linkedin-mark-white.png", route: "https://www.linkedin.com/in/nick-burt/"},
+    {name: "Twitter", iconPath: "/images/social/twitter-mark-white.png", route: "https://twitter.com/nbur4556"},
+  ];
+</script>
+
+<footer class="flex flex-row justify-between mb-150px max-w-1220px w-full text-white">
+  <p>&copy Copyright 2023</p>
+
+  <section class="flex flex-row gap-8px">
+    {#each socialData as social}
+      <SocialLink name={social.name} iconPath={social.iconPath} route={social.route} />
+    {/each}
   </section>
 </footer>
