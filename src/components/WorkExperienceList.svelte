@@ -17,9 +17,15 @@
       startDate={experience.startDate}
       endDate={experience.endDate}
     >
-      {experience.description[0]} <span class="text-accent2">{experience.description[1]}</span>
-      {experience.description[2]} <span class="text-accent3">{experience.description[3]}</span>
-      {experience.description[4] ?? ""}
+      {#each experience.description as desc, index}
+        {#if index % 2 === 0}
+          {`${desc} `}
+        {:else}
+          <span class={((index + 1) / 2) % 2 === 0 ? "text-accent3" : "text-accent2"}>
+            {desc}
+          </span>
+        {/if}
+      {/each}
     </WorkExperience>
   {/each}
 </Card>
