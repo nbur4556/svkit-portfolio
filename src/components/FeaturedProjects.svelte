@@ -9,7 +9,7 @@
   let selected: Project = projectData[0];
 </script>
 
-<section data-cy="select-feature">
+<section class="mb-150px" data-cy="select-feature">
   <h2 id="featured" class="mb-74px text-2xl text-white font-bold">{"> My Projects"}</h2>
 
   <section class="flex flex-row items-stretch gap-32px">
