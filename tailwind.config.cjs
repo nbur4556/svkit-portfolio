@@ -1,17 +1,23 @@
 /** @type {import('tailwindcss').Config} */
 
 const colors = {
-  accent1: "#0FFEFF",
+  accent1: {
+    200: "#70FFFF",
+    300: "#47FFFF",
+    400: "#0FFEFF", //default
+    500: "#00F5F5",
+    600: "#00CCCC",
+  },
   accent2: "#1960F7",
   accent3: "#FE15FE",
   body: "#607B96",
   brand: {
-    900: "#150E27",
+    900: "#150E27", // default
   },
   dark: "#0E081A",
   link: {
     200: "#C5CAE7",
-    300: "#9CA4D7",
+    300: "#9CA4D7", // default
   },
   neutral: "#7C8C9B",
 };

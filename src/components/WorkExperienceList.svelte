@@ -22,7 +22,7 @@
           {`${desc} `}
         {:else}
           <span class={((index + 1) / 2) % 2 === 0 ? "text-accent3" : "text-accent2"}>
-            {desc}
+            {`${desc} `}
           </span>
         {/if}
       {/each}

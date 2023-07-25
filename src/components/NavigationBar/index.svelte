@@ -30,7 +30,7 @@
   
     <ul class={`${margin} transition-spacing ease-in-out`}>
       <li>
-        <Link href={paths.contact} styleClass="text-accent1 hover:text-accent3">
+        <Link href={paths.contact} styleClass="text-accent1-400 hover:text-accent1-200">
           _Contact Me
         </Link>
       </li>

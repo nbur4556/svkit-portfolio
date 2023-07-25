@@ -16,7 +16,7 @@
 
 <section>
   <h3 class="text-lg">
-    <span class="font-bold text-accent1">{title} -</span>
+    <span class="font-bold text-accent1-400">{title} -</span>
     {position} ({duration})
   </h3>
   <p><slot /></p>
