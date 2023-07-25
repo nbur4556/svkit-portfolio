@@ -3,7 +3,7 @@
   import Link from "../components/Link.svelte";
 </script>
 
-<Card testId="contact">
+<Card classExt="mb-150px" testId="contact">
   <h2 slot="heading" id="contact" class="text-2xl font-bold">{"> Send me a Message"}</h2>
 
   <ul class="my-4">
