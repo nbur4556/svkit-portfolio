@@ -1,7 +1,7 @@
 <script lang="ts">
-  import Card from "../components/Card.svelte";
-  import Link from "../components/Link.svelte";
   import Envelope from "../components/SVG/Envelope.svelte";
+  import Card from "../components/UI/Card.svelte";
+  import Link from "../components/UI/Link.svelte";
   import ImageContainer from "../components/UI/ImageContainer.svelte";
 </script>
 

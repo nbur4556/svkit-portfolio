@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Link from "../components/Link.svelte";
+  import Link from "../components/UI/Link.svelte";
 
   export let name: string;
   export let iconPath: string;

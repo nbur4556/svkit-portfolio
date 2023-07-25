@@ -1,6 +1,6 @@
 <script lang="ts">
-  import ImageContainer from "./UI/ImageContainer.svelte";
-  import Link from "./Link.svelte";
+  import ImageContainer from "../components/UI/ImageContainer.svelte";
+  import Link from "../components/UI/Link.svelte";
 
   import type { Project } from "../stores/projectStore";
 

@@ -1,8 +1,8 @@
 <script lang="ts">
   import { page } from "$app/stores";
 
-  import Link from "../../components/Link.svelte";
   import navigationRoutes from "../../components/NavigationBar/navigationRoutes";
+  import Link from "../../components/UI/Link.svelte";
   import { paths } from "../../util/paths";
 
   let scrollY: number;

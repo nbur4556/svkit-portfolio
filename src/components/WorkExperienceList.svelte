@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Card from "../components/Card.svelte";
+  import Card from "../components/UI/Card.svelte";
   import WorkExperience from "../components/WorkExperience.svelte";
 
   import type { Experience } from "../stores/experienceStore";
