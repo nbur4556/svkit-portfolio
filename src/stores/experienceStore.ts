@@ -12,18 +12,19 @@ const experienceData: Array<Experience> = [
   {
     title: "Melodix",
     position: "Web Developer",
-    description: [
-      "Creating full-stack technology for",
-      "musicians",
-      "and",
-      "music lovers."
-    ],
+    description: ["Creating full-stack technology for", "musicians", "and", "music lovers."],
     startDate: new Date(2022, 4),
   },
   {
     title: "CypherEye",
     position: "Mobile Developer",
-    description: ["Developed a","mobile messaging","and","authentication app","using React Native."],
+    description: [
+      "Developed a",
+      "mobile messaging",
+      "and",
+      "authentication app",
+      "using React Native.",
+    ],
     startDate: new Date(2022, 9),
   },
   {

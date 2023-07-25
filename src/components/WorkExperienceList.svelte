@@ -17,7 +17,9 @@
       startDate={experience.startDate}
       endDate={experience.endDate}
     >
-      {experience.description[0]} <span class="text-accent2">{experience.description[1]}</span> {experience.description[2]} <span class="text-accent3">{experience.description[3]}</span> {experience.description[4] ?? ""}
+      {experience.description[0]} <span class="text-accent2">{experience.description[1]}</span>
+      {experience.description[2]} <span class="text-accent3">{experience.description[3]}</span>
+      {experience.description[4] ?? ""}
     </WorkExperience>
   {/each}
 </Card>

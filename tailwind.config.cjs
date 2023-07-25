@@ -13,12 +13,19 @@ const colors = {
     200: "#C5CAE7",
     300: "#9CA4D7",
   },
+  neutral: "#7C8C9B",
 };
 
 //TODO: Replace with theme sizes (sm, md lg)
 const sizes = {
-  "15px": "15px",
+  "12px": "12px",
+  "15px": "15px", //2
+  "18px": "18px",
+  "25px": "25px",
+  "26px": "26px",
   "32px": "32px",
+  "40px": "40px",
+  "42px": "42px",
   "48px": "48px",
   "60px": "60px", //2
   "74px": "74px", //2
@@ -26,6 +33,7 @@ const sizes = {
   "150px": "150px", //4
   "404px": "404px",
   "442px": "442px",
+  "527px": "527px",
   "686px": "686px",
   "1220px": "1220px",
 };

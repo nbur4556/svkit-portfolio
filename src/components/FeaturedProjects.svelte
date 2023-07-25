@@ -14,15 +14,27 @@
 
   <section class="flex flex-row items-stretch gap-32px">
     <div>
-      <ImageContainer classExt="rounded-2xl h-442px" src={selected.image} alt={selected.imageText} />
+      <ImageContainer
+        classExt="rounded-2xl h-442px"
+        src={selected.image}
+        alt={selected.imageText}
+      />
       <Link href={selected.websiteLink} external testId="select-website">Website</Link>
     </div>
     <div>
-      <ImageContainer classExt="rounded-2xl h-442px" src={selected.image} alt={selected.imageText} />
+      <ImageContainer
+        classExt="rounded-2xl h-442px"
+        src={selected.image}
+        alt={selected.imageText}
+      />
       <p>{selected.description}</p>
     </div>
     <div>
-      <ImageContainer classExt="rounded-2xl h-442px" src={selected.image} alt={selected.imageText} />
+      <ImageContainer
+        classExt="rounded-2xl h-442px"
+        src={selected.image}
+        alt={selected.imageText}
+      />
       <Link href={selected.repoLink} external testId="select-repository">Repository</Link>
     </div>
   </section>
