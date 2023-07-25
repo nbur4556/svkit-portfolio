@@ -1,5 +1,6 @@
 <script lang="ts">
   export let classExt: string = "";
+  export let classBodyExt: string = "";
   export let testId: string = "";
 </script>
 
@@ -17,7 +18,7 @@
     </div>
   {/if}
 
-  <div class="text-body" data-cy={`${testId}-content`}>
+  <div class={`text-body ${classBodyExt}`} data-cy={`${testId}-content`}>
     <slot />
   </div>
 </section>
