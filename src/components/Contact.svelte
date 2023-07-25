@@ -34,7 +34,9 @@
         <input class="border-b border-neutral p-15px bg-transparent text-white" type="text" />
       </label>
       <!-- //TODO: gradient background -->
-      <button class="self-start px-40px py-12px bg-accent1-400 hover:bg-accent1-600 rounded-full">Send</button>
+      <button class="self-start px-40px py-12px bg-accent1-400 hover:bg-accent1-600 rounded-full"
+        >Send</button
+      >
     </form>
 
     <div class="flex flex-row gap-25px">

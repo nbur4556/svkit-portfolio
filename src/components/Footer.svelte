@@ -1,10 +1,22 @@
 <script lang="ts">
   import SocialLink from "../components/SocialLink.svelte";
 
-  const socialData = [ 
-    {name: "GitHub", iconPath: "/images/social/github-mark-white.png", route: "https://github.com/nbur4556"},
-    {name: "Linked In", iconPath: "/images/social/linkedin-mark-white.png", route: "https://www.linkedin.com/in/nick-burt/"},
-    {name: "Twitter", iconPath: "/images/social/twitter-mark-white.png", route: "https://twitter.com/nbur4556"},
+  const socialData = [
+    {
+      name: "GitHub",
+      iconPath: "/images/social/github-mark-white.png",
+      route: "https://github.com/nbur4556",
+    },
+    {
+      name: "Linked In",
+      iconPath: "/images/social/linkedin-mark-white.png",
+      route: "https://www.linkedin.com/in/nick-burt/",
+    },
+    {
+      name: "Twitter",
+      iconPath: "/images/social/twitter-mark-white.png",
+      route: "https://twitter.com/nbur4556",
+    },
   ];
 </script>
 

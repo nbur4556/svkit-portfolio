@@ -8,6 +8,6 @@
 </script>
 
 <!-- //TODO: Should have a floating label on hover -->
-<Link styleClass="bg-dark rounded-full" href={route} external={true} testId={testId}>
+<Link styleClass="bg-dark rounded-full" href={route} external={true} {testId}>
   <img class="m-15px w-20px h-20px" src={iconPath} alt={`${name} social media icon`} />
 </Link>
