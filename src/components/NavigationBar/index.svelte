@@ -1,6 +1,7 @@
 <script lang="ts">
-  import Link from "../Link.svelte";
-  import navigationRoutes from "./navigationRoutes";
+  import Link from "../../components/Link.svelte";
+  import navigationRoutes from "../../components/NavigationBar/navigationRoutes";
+  import { paths } from "../../util/paths";
 
   let scrollY: number;
   $: bgColor = (scrollY === 0) ? "" : "bg-dark";
@@ -10,20 +11,29 @@
 <svelte:window bind:scrollY />
 
 <!-- //TODO: Selected link color -->
-<!-- //TODO: background color when not scrolled to top -->
-<nav class={`fixed w-full ${bgColor}`} data-cy="nav-bar">
-  <ul class={`flex flex-row justify-evenly ${margin} transition-spacing ease-in-out`}>
-    {#each navigationRoutes as route}
+<nav class={`flex flex-row justify-center w-full fixed  ${bgColor}`} data-cy="nav-bar">
+  <section class="flex flex-row justify-between max-w-1220px w-full">
+    <ul class={`flex flex-row gap-57px max-w-1220px ${margin} transition-spacing ease-in-out`}>
+      {#each navigationRoutes as route}
+        <li>
+          <Link
+            href={route.href}
+            styleClass="text-link-300 hover:text-link-200"
+            external={route.external}
+            testId={route.linkText + "-link"}
+          >
+            {route.linkText}
+          </Link>
+        </li>
+      {/each}
+    </ul>
+  
+    <ul class={`${margin} transition-spacing ease-in-out`}>
       <li>
-        <Link
-          href={route.href}
-          styleClass="text-link-300 hover:text-link-200"
-          external={route.external}
-          testId={route.linkText + "-link"}
-        >
-          {route.linkText}
+        <Link href={paths.contact} styleClass="text-accent1 hover:text-accent3">
+          _Contact Me
         </Link>
       </li>
-    {/each}
-  </ul>
+    </ul>
+  </section>
 </nav>
