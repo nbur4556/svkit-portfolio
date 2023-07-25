@@ -26,15 +26,15 @@ const colors = {
 };
 
 const sizes = {
-  "xxs": "8px",
-  "xs": "16px",
-  "sm": "32px",
-  "md": "64px",
-  "lg": "128px",
-  "xl": "256px",
-  "xxl": "512px",
-  "container-lg": "1220px"
-}
+  xxs: "8px",
+  xs: "16px",
+  sm: "32px",
+  md: "64px",
+  lg: "128px",
+  xl: "256px",
+  xxl: "512px",
+  "container-lg": "1220px",
+};
 
 const pixelSizes = {
   "20px": "20px",
@@ -56,13 +56,13 @@ module.exports = {
         spacing: "margin, padding",
       },
       colors: colors,
-      gap: {...pixelSizes, ...sizes},
-      height: {...pixelSizes, ...sizes},
-      margin: {...pixelSizes, ...sizes},
-      maxWidth: {...pixelSizes, ...sizes},
-      padding: {...pixelSizes, ...sizes},
-      text: {...pixelSizes, ...sizes},
-      width: {...pixelSizes, ...sizes},
+      gap: { ...pixelSizes, ...sizes },
+      height: { ...pixelSizes, ...sizes },
+      margin: { ...pixelSizes, ...sizes },
+      maxWidth: { ...pixelSizes, ...sizes },
+      padding: { ...pixelSizes, ...sizes },
+      text: { ...pixelSizes, ...sizes },
+      width: { ...pixelSizes, ...sizes },
     },
   },
   plugins: [],

@@ -11,13 +11,6 @@
     </div>
   {/if}
 
-  <!-- //TODO: Will we be able to remove the image section? -->
-  {#if $$slots.image}
-    <div data-cy={`${testId}-image`}>
-      <slot name="image" />
-    </div>
-  {/if}
-
   <div class={`text-body ${classBodyExt}`} data-cy={`${testId}-content`}>
     <slot />
   </div>
