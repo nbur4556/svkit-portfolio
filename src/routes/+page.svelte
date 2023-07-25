@@ -31,18 +31,16 @@
   });
 </script>
 
-<main class="flex flex-col items-center bg-brand-900">
-  <NavigationBar />
-  <PageContent>
-    <Hero />
-    <PageSection>
-      <FeaturedProjects {projectData} />
-    </PageSection>
-    <PageSection>
-      <WorkExperienceList {experienceData} />
-    </PageSection>
-    <PageSection>
-      <Contact />
-    </PageSection>
-  </PageContent>
-</main>
+<NavigationBar />
+<PageContent>
+  <Hero />
+  <PageSection>
+    <FeaturedProjects {projectData} />
+  </PageSection>
+  <PageSection>
+    <WorkExperienceList {experienceData} />
+  </PageSection>
+  <PageSection>
+    <Contact />
+  </PageSection>
+</PageContent>
