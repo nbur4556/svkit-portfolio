@@ -9,13 +9,13 @@
   let selected: Project = projectData[0];
 </script>
 
-<section class="mb-150px" data-cy="select-feature">
-  <h2 id="featured" class="mb-74px text-2xl text-white font-bold">{"> My Projects"}</h2>
+<section class="mb-lg" data-cy="select-feature">
+  <h2 id="featured" class="mb-md text-2xl text-white font-bold">{"> My Projects"}</h2>
 
-  <section class="flex flex-row items-stretch gap-32px">
+  <section class="flex flex-row items-stretch gap-sm">
     <div>
       <ImageContainer
-        classExt="rounded-2xl h-442px"
+        classExt="rounded-2xl h-440px"
         src={selected.image}
         alt={selected.imageText}
       />
@@ -23,7 +23,7 @@
     </div>
     <div>
       <ImageContainer
-        classExt="rounded-2xl h-442px"
+        classExt="rounded-2xl h-440px"
         src={selected.image}
         alt={selected.imageText}
       />
@@ -31,7 +31,7 @@
     </div>
     <div>
       <ImageContainer
-        classExt="rounded-2xl h-442px"
+        classExt="rounded-2xl h-440px"
         src={selected.image}
         alt={selected.imageText}
       />

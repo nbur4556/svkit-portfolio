@@ -20,10 +20,10 @@
   ];
 </script>
 
-<footer class="flex flex-row justify-between mb-150px max-w-1220px w-full text-white">
+<footer class="flex flex-row justify-between mb-md max-w-container-lg w-full text-white">
   <p>&copy Copyright 2023</p>
 
-  <section class="flex flex-row gap-8px">
+  <section class="flex flex-row gap-xxs">
     {#each socialData as social}
       <SocialLink name={social.name} iconPath={social.iconPath} route={social.route} />
     {/each}

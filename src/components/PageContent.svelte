@@ -1,3 +1,3 @@
-<section class="flex flex-col max-w-1220px">
+<section class="flex flex-col max-w-container-lg">
   <slot />
 </section>

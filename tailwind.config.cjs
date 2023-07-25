@@ -25,29 +25,24 @@ const colors = {
   neutral: "#7C8C9B",
 };
 
-//TODO: Replace with theme sizes (sm, md lg)
 const sizes = {
-  "8px": "8px",
-  "12px": "12px",
-  "15px": "15px", //2
-  "18px": "18px",
-  "20px": "20px", //2
-  "25px": "25px",
-  "26px": "26px",
-  "32px": "32px",
+  "xxs": "8px",
+  "xs": "16px",
+  "sm": "32px",
+  "md": "64px",
+  "lg": "128px",
+  "xl": "256px",
+  "xxl": "512px",
+  "container-lg": "1220px"
+}
+
+const pixelSizes = {
+  "20px": "20px",
   "40px": "40px",
-  "42px": "42px",
-  "48px": "48px", //2
-  "57px": "57px",
-  "60px": "60px", //2
-  "74px": "74px", //2
-  "130px": "130px",
-  "150px": "150px", //5
-  "404px": "404px",
-  "442px": "442px",
-  "527px": "527px",
-  "686px": "686px",
-  "1220px": "1220px",
+  "72px": "72px",
+  "400px": "400px",
+  "440px": "440px",
+  "688px": "688px",
 };
 
 module.exports = {
@@ -61,13 +56,13 @@ module.exports = {
         spacing: "margin, padding",
       },
       colors: colors,
-      gap: sizes,
-      height: sizes,
-      margin: sizes,
-      maxWidth: sizes,
-      padding: sizes,
-      text: sizes,
-      width: sizes,
+      gap: {...pixelSizes, ...sizes},
+      height: {...pixelSizes, ...sizes},
+      margin: {...pixelSizes, ...sizes},
+      maxWidth: {...pixelSizes, ...sizes},
+      padding: {...pixelSizes, ...sizes},
+      text: {...pixelSizes, ...sizes},
+      width: {...pixelSizes, ...sizes},
     },
   },
   plugins: [],

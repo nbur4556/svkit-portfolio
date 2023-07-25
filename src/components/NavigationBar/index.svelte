@@ -7,15 +7,15 @@
 
   let scrollY: number;
   $: bgColor = scrollY === 0 ? "" : "bg-dark";
-  $: margin = scrollY === 0 ? "my-48px" : "my-18px";
+  $: margin = scrollY === 0 ? "my-40px" : "my-xs";
 </script>
 
 <svelte:window bind:scrollY />
 
 <!-- //TODO: Selected link gradient -->
 <nav class={`flex flex-row justify-center w-full fixed  ${bgColor}`} data-cy="nav-bar">
-  <section class="flex flex-row justify-between max-w-1220px w-full">
-    <ul class={`flex flex-row gap-57px max-w-1220px ${margin} transition-spacing ease-in-out`}>
+  <section class="flex flex-row justify-between max-w-container-lg w-full">
+    <ul class={`flex flex-row gap-md ${margin} transition-spacing ease-in-out`}>
       {#each navigationRoutes as route}
         <li>
           <Link
