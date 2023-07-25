@@ -18,6 +18,13 @@
 </script>
 
 <section class="flex flex-col items-center">
-  <input type="range" bind:value={selected} min={1} max={count} on:change={handleUpdate} />
+  <input
+    class="appearance-none h-4px w-xl bg-body accent accent-accent1-400 overflow-hidden cursor-pointer"
+    type="range"
+    bind:value={selected}
+    min={1}
+    max={count}
+    on:change={handleUpdate}
+  />
   <p class="text-body">{displaySelected} / {displayCount}</p>
 </section>

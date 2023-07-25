@@ -37,6 +37,7 @@ const sizes = {
 };
 
 const pixelSizes = {
+  "4px": "4px",
   "20px": "20px",
   "40px": "40px",
   "72px": "72px",

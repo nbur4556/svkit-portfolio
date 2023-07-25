@@ -8,8 +8,6 @@
   export let projectData: Array<Project>;
 
   let selected: Project = projectData[0];
-
-  const updateSelectedProject = (index: number) => (selected = projectData[index]);
 </script>
 
 <section class="flex flex-col gap-md mb-lg" data-cy="select-feature">
@@ -44,6 +42,6 @@
 
   <ProjectSelector
     count={projectData.length}
-    on:update={({detail}) => (selected = projectData[detail.value - 1])}
+    on:update={({ detail }) => (selected = projectData[detail.value - 1])}
   />
 </section>
