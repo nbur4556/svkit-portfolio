@@ -40,5 +40,5 @@
     </div>
   </section>
 
-  <ProjectSelector count={projectData.length + 1} />
+  <ProjectSelector count={projectData.length} />
 </section>
