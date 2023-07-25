@@ -18,11 +18,13 @@ const colors = {
 //TODO: Replace with theme sizes (sm, md lg)
 const sizes = {
   "15px": "15px",
+  "32px": "32px",
   "48px": "48px",
   "60px": "60px",
   "74px": "74px",
   "130px": "130px",
   "404px": "404px",
+  "442px": "442px",
   "686px": "686px",
   "1220px": "1220px",
 };
@@ -39,6 +41,7 @@ module.exports = {
     extend: {
       colors: colors,
       gap: sizes,
+      height: sizes,
       margin: sizes,
       maxWidth: sizes,
       padding: sizes,

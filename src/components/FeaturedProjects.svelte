@@ -10,17 +10,27 @@
   let selected: Project = projectData[0];
 </script>
 
-<Card testId="select-feature">
-  <h2 slot="heading" id="featured" class="text-2xl font-bold">{"> My Projects"}</h2>
+<section data-cy="select-feature">
+  <h2 id="featured" class="text-2xl text-white font-bold">{"> My Projects"}</h2>
 
-  <img slot="image" src={selected.image} alt={selected.imageText} />
+  <section class="flex flex-row gap-32px">
+    <div class="h-442px">
+      <img class="object-fill" src={selected.image} alt={selected.imageText} />
+    </div>
+    <div class="h-442px">
+      <img class="object-fill" src={selected.image} alt={selected.imageText} />
+    </div>
+    <div class="h-442px">
+      <img class="object-fill" src={selected.image} alt={selected.imageText} />
+    </div>
+  </section>
 
   <p>{selected.description}</p>
   <div class="flex flex-row space-x-10">
     <Link href={selected.websiteLink} external testId="select-website">Website</Link>
     <Link href={selected.repoLink} external testId="select-repository">Repository</Link>
   </div>
-</Card>
+</section>
 
 <div class="flex flex-row justify-evenly space-x-4 h-40" data-cy="preview-feature">
   {#each projectData as project, index}

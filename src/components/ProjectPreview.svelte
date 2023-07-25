@@ -11,6 +11,7 @@
   };
 </script>
 
+<!-- //TODO: Replace with a slider -->
 <Card {testId}>
   <!-- //! May require double click to select. Can onclick be handled on the card directly? -->
   <button slot="image" on:click={handleOnClick} data-cy={`${testId}-button`}>

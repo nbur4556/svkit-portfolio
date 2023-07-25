@@ -2,7 +2,7 @@
   export let testId: string = "";
 </script>
 
-<section class="flex flex-col gap-60px m-10 p-74px bg-dark rounded-3xl" data-cy={testId}>
+<section class="flex flex-col gap-60px p-74px bg-dark rounded-3xl" data-cy={testId}>
   {#if $$slots.heading}
     <div class="text-white" data-cy={`${testId}-heading`}>
       <slot name="heading" />
