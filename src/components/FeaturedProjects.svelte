@@ -1,4 +1,5 @@
 <script lang="ts">
+  import ProjectSelector from "../components/ProjectSelector.svelte";
   import ImageContainer from "../components/UI/ImageContainer.svelte";
   import Link from "../components/UI/Link.svelte";
 
@@ -9,8 +10,8 @@
   let selected: Project = projectData[0];
 </script>
 
-<section class="mb-lg" data-cy="select-feature">
-  <h2 id="featured" class="mb-md text-2xl text-white font-bold">{"> My Projects"}</h2>
+<section class="flex flex-col gap-md mb-lg" data-cy="select-feature">
+  <h2 id="featured" class="text-2xl text-white font-bold">{"> My Projects"}</h2>
 
   <section class="flex flex-row items-stretch gap-sm">
     <div>
@@ -38,4 +39,6 @@
       <Link href={selected.repoLink} external testId="select-repository">Repository</Link>
     </div>
   </section>
+
+  <ProjectSelector count={projectData.length + 1} />
 </section>
