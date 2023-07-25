@@ -20,7 +20,7 @@ const sizes = {
   "15px": "15px",
   "32px": "32px",
   "48px": "48px",
-  "60px": "60px",
+  "60px": "60px", //2
   "74px": "74px", //2
   "130px": "130px",
   "150px": "150px", //4
@@ -34,7 +34,7 @@ module.exports = {
   content: ["./src/**/*.{html,js,svelte,ts}"],
   theme: {
     fontFamily: {
-      content: ["Open Sans", "sans-serif"],
+      content: ["Fira Code", "monospace"],
     },
     transitionProperty: {
       width: "width",
