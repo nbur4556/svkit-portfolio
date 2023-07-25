@@ -47,7 +47,7 @@ module.exports = {
       content: ["Fira Code", "monospace"],
     },
     transitionProperty: {
-      width: "width",
+      spacing: "margin, padding",
     },
     extend: {
       colors: colors,
