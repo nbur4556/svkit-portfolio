@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Card from "./Card.svelte";
+  import ImageContainer from "./UI/ImageContainer.svelte";
   import Link from "./Link.svelte";
   import ProjectPreview from "./ProjectPreview.svelte";
 
@@ -11,18 +11,12 @@
 </script>
 
 <section data-cy="select-feature">
-  <h2 id="featured" class="text-2xl text-white font-bold">{"> My Projects"}</h2>
+  <h2 id="featured" class="mb-74px text-2xl text-white font-bold">{"> My Projects"}</h2>
 
-  <section class="flex flex-row gap-32px">
-    <div class="h-442px">
-      <img class="object-fill" src={selected.image} alt={selected.imageText} />
-    </div>
-    <div class="h-442px">
-      <img class="object-fill" src={selected.image} alt={selected.imageText} />
-    </div>
-    <div class="h-442px">
-      <img class="object-fill" src={selected.image} alt={selected.imageText} />
-    </div>
+  <section class="flex flex-row items-stretch gap-32px h-442px">
+    <ImageContainer classExt="rounded-2xl" src={selected.image} alt={selected.imageText} />
+    <ImageContainer classExt="rounded-2xl" src={selected.image} alt={selected.imageText} />
+    <ImageContainer classExt="rounded-2xl" src={selected.image} alt={selected.imageText} />
   </section>
 
   <p>{selected.description}</p>
@@ -31,13 +25,3 @@
     <Link href={selected.repoLink} external testId="select-repository">Repository</Link>
   </div>
 </section>
-
-<div class="flex flex-row justify-evenly space-x-4 h-40" data-cy="preview-feature">
-  {#each projectData as project, index}
-    <ProjectPreview
-      item={project}
-      selectItem={(item) => (selected = item)}
-      testId={`preview-${index}`}
-    />
-  {/each}
-</div>
