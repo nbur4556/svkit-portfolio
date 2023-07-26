@@ -46,6 +46,8 @@ const pixelSizes = {
   "688px": "688px",
 };
 
+//TODO: Adjust font sizes across full design
+//TODO: Font sizes should use their own overrides
 module.exports = {
   content: ["./src/**/*.{html,js,svelte,ts}"],
   theme: {

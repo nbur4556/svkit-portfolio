@@ -1,4 +1,5 @@
 <script lang="ts">
+  export let style: string = "";
   export let classExt: string = "";
   export let classBodyExt: string = "";
   export let testId: string = "";
