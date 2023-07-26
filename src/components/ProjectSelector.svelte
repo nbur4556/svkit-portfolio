@@ -10,11 +10,11 @@
   let selected: number = 1;
 
   const stepSelected = (step: number) => {
-    if(selected + step > 0 && selected + step <= count) {
+    if (selected + step > 0 && selected + step <= count) {
       selected += step;
       handleUpdate();
     }
-  }
+  };
 
   const handleUpdate = () => {
     dispatch("update", {
