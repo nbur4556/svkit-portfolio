@@ -3,7 +3,7 @@
   export let testId: string = "";
 
   let className: string = "";
-  export { className as class};
+  export { className as class };
 </script>
 
 <section class={`flex flex-col gap-md p-72px bg-dark rounded-3xl ${className}`} data-cy={testId}>
