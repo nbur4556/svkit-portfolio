@@ -5,14 +5,14 @@
   import ImageContainer from "../components/UI/ImageContainer.svelte";
 </script>
 
-<section class="flex flex-row justify-between items-center mb-lg">
+<section class="flex flex-row justify-between items-center gap-sm mb-lg">
   <ImageContainer
     classExt="h-xxl"
     src="/images/mailbox.png"
     alt="Mailbox full of letters shown protruding from a computer screen."
   />
 
-  <Card classBodyExt="text-white" testId="contact">
+  <Card classBody="text-white" testId="contact">
     <h2 slot="heading" id="contact" class="text-2xl font-bold">{"> Send me a Message"}</h2>
 
     <!-- //TODO: Working form -->

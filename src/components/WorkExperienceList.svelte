@@ -7,7 +7,7 @@
   export let experienceData: Array<Experience>;
 </script>
 
-<Card classExt="mb-lg" classBodyExt="flex flex-col gap-md" testId="work-experience">
+<Card class="mb-lg" classBody="flex flex-col gap-md" testId="work-experience">
   <h2 slot="heading" id="experience" class="text-2xl font-bold">{"> Work Experience"}</h2>
 
   {#each experienceData as experience}
