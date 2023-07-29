@@ -15,7 +15,10 @@
 <!-- //TODO: Selected link gradient -->
 <nav class={`flex flex-row justify-center w-full fixed  ${bgColor}`} data-cy="nav-bar">
   <section class="flex flex-row justify-between max-w-container-lg w-full">
-    <ul class={`flex flex-row gap-md ${margin} transition-spacing ease-in-out`}>
+    <ul
+      class={`flex flex-row gap-md ${margin} transition-spacing ease-in-out`}
+      data-cy="nav-bar-list"
+    >
       {#each navigationRoutes as route}
         <li>
           <Link
@@ -32,9 +35,13 @@
       {/each}
     </ul>
 
-    <ul class={`${margin} transition-spacing ease-in-out`}>
+    <ul class={`${margin} transition-spacing ease-in-out`} data-cy="nav-bar-cta">
       <li>
-        <Link href={paths.contact} styleClass="text-accent1-400 hover:text-accent1-200">
+        <Link
+          href={paths.contact}
+          styleClass="text-accent1-400 hover:text-accent1-200"
+          testId="_Contact Me-link"
+        >
           _Contact Me
         </Link>
       </li>
