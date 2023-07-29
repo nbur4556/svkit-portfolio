@@ -16,12 +16,16 @@
   <h2 id="featured" class="text-2xl text-white font-bold">{"> My Projects"}</h2>
 
   <section class="flex flex-row items-stretch gap-sm">
+    <!-- //TODO: Should navigate to website on click -->
+    <!-- //TODO: Should display navigation to website text on hover -->
     <FeaturedProjectItem image={selected.image} />
     <FeaturedProjectItem
       title={selected.title}
       description={selected.description}
       image={selected.image}
     />
+    <!-- //TODO: Should navigate to repository on click -->
+    <!-- //TODO: Should display navigation to repository text on hover -->
     <FeaturedProjectItem image={selected.image} />
   </section>
 

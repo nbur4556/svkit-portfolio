@@ -36,8 +36,12 @@
     on:change={handleUpdate}
   />
   <div class="flex flex-row items-center gap-xs">
-    <button on:click={() => stepSelected(-1)}><Chevron fill="#0FFEFF" direction={-1} /></button>
+    <button on:click={() => stepSelected(-1)} data-cy="project-nav-left">
+      <Chevron fill="#0FFEFF" direction={-1} />
+    </button>
     <p class="text-body">{displaySelected} / {displayCount}</p>
-    <button on:click={() => stepSelected(1)}><Chevron fill="#0FFEFF" /></button>
+    <button on:click={() => stepSelected(1)} data-cy="project-nav-right">
+      <Chevron fill="#0FFEFF" />
+    </button>
   </div>
 </section>
