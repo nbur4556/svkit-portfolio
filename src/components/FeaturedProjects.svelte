@@ -12,7 +12,7 @@
   $: console.log(selectedImage);
 </script>
 
-<section class="flex flex-col gap-md mb-lg" data-cy="select-feature">
+<section class="flex flex-col gap-md mb-lg" data-cy="featured-projects">
   <h2 id="featured" class="text-2xl text-white font-bold">{"> My Projects"}</h2>
 
   <section class="flex flex-row items-stretch gap-sm">
