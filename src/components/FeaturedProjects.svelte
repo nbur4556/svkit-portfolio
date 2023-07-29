@@ -16,21 +16,13 @@
   <h2 id="featured" class="text-2xl text-white font-bold">{"> My Projects"}</h2>
 
   <section class="flex flex-row items-stretch gap-sm">
+    <FeaturedProjectItem image={selected.image} />
     <FeaturedProjectItem
       title={selected.title}
       description={selected.description}
       image={selected.image}
     />
-    <FeaturedProjectItem
-      title={selected.title}
-      description={selected.description}
-      image={selected.image}
-    />
-    <FeaturedProjectItem
-      title={selected.title}
-      description={selected.description}
-      image={selected.image}
-    />
+    <FeaturedProjectItem image={selected.image} />
   </section>
 
   <ProjectSelector

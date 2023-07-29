@@ -1,15 +1,18 @@
 <script lang="ts">
-  export let title: string;
-  export let description: string;
   export let image: string;
+  export let title: string | undefined = undefined;
+  export let description: string | undefined = undefined;
 </script>
 
 <!-- //TODO: faded image when text is visible -->
 <div
-  class="flex flex-col justify-center p-md h-440px bg-cover bg-center rounded-2xl"
+  class="flex flex-col justify-center w-full p-md h-440px bg-cover bg-center rounded-2xl"
   style={`background-image:url(${image})`}
 >
-  <p class="text-lg text-white text-center p-xs">{title}</p>
-  <!-- //TODO: Replace content but do not shrink width -->
-  <p class="text-xs text-white">{description}</p>
+  {#if title}
+    <p class="text-lg text-white text-center p-xs">{title}</p>
+  {/if}
+  {#if description}
+    <p class="max-w-xl text-xs text-white">{description}</p>
+  {/if}
 </div>
