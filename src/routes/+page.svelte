@@ -3,10 +3,11 @@
 
   import Contact from "../components/Contact.svelte";
   import FeaturedProjects from "../components/FeaturedProjects.svelte";
+  import Footer from "../components/Footer.svelte";
   import Hero from "../components/Hero.svelte";
   import NavigationBar from "../components/NavigationBar/index.svelte";
-  import PageContent from "../components/PageContent.svelte";
-  import PageSection from "../components/PageSection.svelte";
+  import PageContent from "../components/UI/PageContent.svelte";
+  import PageSection from "../components/UI/PageSection.svelte";
   import WorkExperienceList from "../components/WorkExperienceList.svelte";
   import { projectStore } from "../stores/projectStore";
   import { experienceStore } from "../stores/experienceStore";
@@ -31,18 +32,17 @@
   });
 </script>
 
-<main>
-  <NavigationBar />
-  <PageContent>
-    <Hero />
-    <PageSection>
-      <FeaturedProjects {projectData} />
-    </PageSection>
-    <PageSection>
-      <WorkExperienceList {experienceData} />
-    </PageSection>
-    <PageSection>
-      <Contact />
-    </PageSection>
-  </PageContent>
-</main>
+<NavigationBar />
+<PageContent>
+  <Hero />
+  <PageSection>
+    <FeaturedProjects {projectData} />
+  </PageSection>
+  <PageSection>
+    <WorkExperienceList {experienceData} />
+  </PageSection>
+  <PageSection>
+    <Contact />
+  </PageSection>
+</PageContent>
+<Footer />

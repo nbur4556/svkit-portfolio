@@ -1,9 +1,9 @@
 import { paths } from "../../../src/util/paths";
 
 const navRoutes = [
-  { href: paths.featured, linkText: "Featured Projects" },
-  { href: paths.experience, linkText: "Work Experience" },
-  { href: paths.contact, linkText: "Contact Me" },
+  { href: paths.featured, linkText: "_Featured Projects" },
+  { href: paths.experience, linkText: "_Work Experience" },
+  { href: paths.contact, linkText: "_Contact Me" },
 ];
 
 describe("navigation bar", () => {
@@ -16,7 +16,7 @@ describe("navigation bar", () => {
   });
 
   it("navigation bar contains link to resume", () => {
-    cy.get(`[data-cy="My Resume-link"]`)
+    cy.get(`[data-cy="_My Resume-link"]`)
       .should("have.attr", "target", "_blank")
       .should("have.attr", "href", "/resume.pdf")
       .should("contain.text", "My Resume");
@@ -29,17 +29,22 @@ describe("navigation bar", () => {
     });
   });
 
-  it("navigation bar collapses on scroll", () => {
-    const collapsed: string = "w-1/12";
-    const notCollapsed: string = "w-1/5";
-    cy.get("[data-cy=nav-bar]").as("navBar");
+  it("navigation bar shrinks on scroll", () => {
+    const collapsed: string = "my-xs";
+    const notCollapsed: string = "my-40px";
+    cy.get("[data-cy=nav-bar-list]").as("navBarList");
+    cy.get("[data-cy=nav-bar-cta]").as("navBarCta");
 
     cy.scrollTo(0, 500);
-    cy.get("@navBar").should("have.class", collapsed);
-    cy.get("@navBar").should("not.have.class", notCollapsed);
+    cy.get("@navBarList").should("have.class", collapsed);
+    cy.get("@navBarCta").should("have.class", collapsed);
+    cy.get("@navBarList").should("not.have.class", notCollapsed);
+    cy.get("@navBarCta").should("not.have.class", notCollapsed);
 
     cy.scrollTo(0, 0);
-    cy.get("@navBar").should("have.class", notCollapsed);
-    cy.get("@navBar").should("not.have.class", collapsed);
+    cy.get("@navBarList").should("have.class", notCollapsed);
+    cy.get("@navBarCta").should("have.class", notCollapsed);
+    cy.get("@navBarList").should("not.have.class", collapsed);
+    cy.get("@navBarCta").should("not.have.class", collapsed);
   });
 });

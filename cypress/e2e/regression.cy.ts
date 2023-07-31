@@ -2,7 +2,7 @@ describe("landing page snapshots", () => {
   beforeEach(() => {
     cy.visit("/");
     //TODO: wait for content to load instead of amount of time
-    // cy.wait(500);
+    cy.wait(500);
     cy.get("[data-cy=nav-bar]").contains("Featured Projects");
   });
 

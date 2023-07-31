@@ -14,9 +14,10 @@
   $: duration = monthDiff >= 12 ? `${Math.round(monthDiff / 12)}y` : `${monthDiff}m`;
 </script>
 
-<div>
-  <h3 class="text-lg font-bold">
-    {title} <span class="font-normal">- {position} ({duration})</span>
+<section>
+  <h3 class="text-lg">
+    <span class="font-bold text-accent1-400">{title} -</span>
+    {position} ({duration})
   </h3>
   <p><slot /></p>
-</div>
+</section>

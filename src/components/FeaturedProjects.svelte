@@ -1,33 +1,36 @@
 <script lang="ts">
-  import Card from "./Card.svelte";
-  import Link from "./Link.svelte";
-  import ProjectPreview from "./ProjectPreview.svelte";
+  import FeaturedProjectItem from "../components/FeaturedProjectItem.svelte";
+  import ProjectSelector from "../components/ProjectSelector.svelte";
 
   import type { Project } from "../stores/projectStore";
 
   export let projectData: Array<Project>;
 
   let selected: Project = projectData[0];
+
+  $: selectedImage = `bg-[url('${selected.image}')]`;
+  $: console.log(selectedImage);
 </script>
 
-<Card headingClass="py-4 px-10" contentClass="flex flex-col space-y-4 p-10" testId="select-feature">
-  <h2 slot="heading" id="featured" class="text-2xl font-bold text-slate-100">{selected.title}</h2>
+<section class="flex flex-col gap-md mb-lg" data-cy="featured-projects">
+  <h2 id="featured" class="text-2xl text-white font-bold">{"> My Projects"}</h2>
 
-  <img slot="image" src={selected.image} alt={selected.imageText} />
-
-  <p>{selected.description}</p>
-  <div class="flex flex-row space-x-10">
-    <Link href={selected.websiteLink} external testId="select-website">Website</Link>
-    <Link href={selected.repoLink} external testId="select-repository">Repository</Link>
-  </div>
-</Card>
-
-<div class="flex flex-row justify-evenly space-x-4 h-40" data-cy="preview-feature">
-  {#each projectData as project, index}
-    <ProjectPreview
-      item={project}
-      selectItem={(item) => (selected = item)}
-      testId={`preview-${index}`}
+  <section class="flex flex-row items-stretch gap-sm">
+    <!-- //TODO: Should navigate to website on click -->
+    <!-- //TODO: Should display navigation to website text on hover -->
+    <FeaturedProjectItem image={selected.image} />
+    <FeaturedProjectItem
+      title={selected.title}
+      description={selected.description}
+      image={selected.image}
     />
-  {/each}
-</div>
+    <!-- //TODO: Should navigate to repository on click -->
+    <!-- //TODO: Should display navigation to repository text on hover -->
+    <FeaturedProjectItem image={selected.image} />
+  </section>
+
+  <ProjectSelector
+    count={projectData.length}
+    on:update={({ detail }) => (selected = projectData[detail.value - 1])}
+  />
+</section>
