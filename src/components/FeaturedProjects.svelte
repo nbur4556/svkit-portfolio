@@ -9,7 +9,6 @@
   let selected: Project = projectData[0];
 
   $: selectedImage = `bg-[url('${selected.image}')]`;
-  $: console.log(selectedImage);
 </script>
 
 <section class="flex flex-col gap-md mb-lg" data-cy="featured-projects">
