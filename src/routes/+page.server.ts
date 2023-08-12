@@ -3,7 +3,7 @@ import { FORWARDMAIL_USER, FORWARDMAIL_PASS} from "$env/static/private";
 
 //TODO: nodemailer typing
 const transporter = nodemailer.createTransport({
-  host: "smtp.forwardemail.net",
+  host: "smtp.gmail.com",
   port: 465,
   secure: true,
   auth: {
