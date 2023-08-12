@@ -1,5 +1,7 @@
-import * as nodemailer from "nodemailer";
+import { fail } from '@sveltejs/kit';
 import { FORWARDMAIL_USER, FORWARDMAIL_PASS } from "$env/static/private";
+import * as nodemailer from "nodemailer";
+
 
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
@@ -12,7 +14,7 @@ const transporter = nodemailer.createTransport({
 });
 
 export const actions = {
-  default: async ({ request }) => {
+  contact: async ({ request }) => {
     const formData = await request.formData();
 
     const name = formData.get("name");
@@ -21,7 +23,7 @@ export const actions = {
     const message = formData.get("message");
 
     try {
-      const info = await transporter.sendMail({
+      await transporter.sendMail({
         to: "nbur4556@gmail.com",
         subject: "Portfolio Message",
         text: ` ${message}
@@ -33,9 +35,9 @@ export const actions = {
         `,
       });
 
-      console.log(`Message sent: ${info.messageId}`);
+      return { success: true }
     } catch (err) {
-      console.error(err);
+      return fail(500)
     }
   },
 };
