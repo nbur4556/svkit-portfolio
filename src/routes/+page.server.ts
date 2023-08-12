@@ -1,7 +1,6 @@
-import { fail } from '@sveltejs/kit';
+import { fail } from "@sveltejs/kit";
 import { FORWARDMAIL_USER, FORWARDMAIL_PASS } from "$env/static/private";
 import * as nodemailer from "nodemailer";
-
 
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
@@ -35,9 +34,9 @@ export const actions = {
         `,
       });
 
-      return { success: true }
+      return { success: true };
     } catch (err) {
-      return fail(500)
+      return fail(500);
     }
   },
 };

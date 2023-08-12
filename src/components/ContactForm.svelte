@@ -1,25 +1,26 @@
 <script lang="ts">
-  import { enhance } from "$app/forms";
-  import type { TypedSubmitFunction } from '$lib/form';
-  
-  import type { ActionData } from './$types';
+  import { enhance, type SubmitFunction } from "$app/forms";
 
   let progressMessage = "";
 
-  const contactHandler: TypedSubmitFunction<ActionData> = () => {
+  const contactHandler: SubmitFunction = () => {
     progressMessage = "...sending";
-    return async({ result }) => {
+    return async ({ result }) => {
       if (result.type === "success") {
-        progressMessage = "Message sent!"
+        progressMessage = "Message sent!";
+      } else {
+        progressMessage = "Failed to send message";
       }
-      else {
-        progressMessage = "Failed to send message"
-      }
-    }
-  }
+    };
+  };
 </script>
 
-<form method="POST" action="?/contact" use:enhance={contactHandler} class="flex flex-col gap-sm mb-sm">
+<form
+  method="POST"
+  action="?/contact"
+  use:enhance={contactHandler}
+  class="flex flex-col gap-sm mb-sm"
+>
   <label for="name" class="flex flex-col text-neutral">
     Full Name
     <input name="name" type="text" class="border-b border-neutral p-xs bg-transparent text-white" />
