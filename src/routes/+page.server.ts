@@ -1,5 +1,5 @@
 import * as nodemailer from "nodemailer";
-import { FORWARDMAIL_USER, FORWARDMAIL_PASS} from "$env/static/private";
+import { FORWARDMAIL_USER, FORWARDMAIL_PASS } from "$env/static/private";
 
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
@@ -7,12 +7,12 @@ const transporter = nodemailer.createTransport({
   secure: true,
   auth: {
     user: FORWARDMAIL_USER,
-    pass: FORWARDMAIL_PASS
-  }
-})
+    pass: FORWARDMAIL_PASS,
+  },
+});
 
 export const actions = {
-  default: async ({request}) => {
+  default: async ({ request }) => {
     const formData = await request.formData();
 
     const name = formData.get("name");
@@ -32,8 +32,8 @@ export const actions = {
         From ${name}
         `,
       });
-  
-      console.log(`Message sent: ${info.messageId}`)
+
+      console.log(`Message sent: ${info.messageId}`);
     } catch (err) {
       console.error(err);
     }
