@@ -16,27 +16,27 @@
     <h2 slot="heading" id="contact" class="text-2xl font-bold">{"> Send me a Message"}</h2>
 
     <!-- //TODO: Working form -->
-    <form class="flex flex-col gap-sm mb-sm">
-      <label class="flex flex-col text-neutral">
+    <form method="POST" class="flex flex-col gap-sm mb-sm">
+      <label for="name" class="flex flex-col text-neutral">
         Full Name
-        <input class="border-b border-neutral p-xs bg-transparent text-white" type="text" />
+        <input name="name" class="border-b border-neutral p-xs bg-transparent text-white" type="text" />
       </label>
-      <label class="flex flex-col text-neutral">
+      <label for="email" class="flex flex-col text-neutral">
         Email
-        <input class="border-b border-neutral p-xs bg-transparent text-white" type="email" />
+        <input name="email" class="border-b border-neutral p-xs bg-transparent text-white" type="email" />
       </label>
-      <label class="flex flex-col text-neutral">
+      <label for="phone" class="flex flex-col text-neutral">
         Phone
-        <input class="border-b border-neutral p-xs bg-transparent text-white" type="tel" />
+        <input name="phone" class="border-b border-neutral p-xs bg-transparent text-white" type="tel" />
       </label>
-      <label class="flex flex-col text-neutral">
+      <label for="message" class="flex flex-col text-neutral">
         Message
-        <input class="border-b border-neutral p-xs bg-transparent text-white" type="text" />
+        <input name="message" class="border-b border-neutral p-xs bg-transparent text-white" type="text" />
       </label>
       <button
-        class="self-start px-md py-xs rounded-full bg-gradient-to-r from-accent3-400 to-accent1-400 hover:from-accent3-300 hover:to-accent1-300"
-        >Send</button
-      >
+        class="self-start px-md py-xs rounded-full bg-gradient-to-r from-accent3-400 to-accent1-400 hover:from-accent3-300 hover:to-accent1-300">
+      Send
+      </button>
     </form>
 
     <div class="flex flex-row gap-sm">
