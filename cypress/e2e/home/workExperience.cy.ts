@@ -22,9 +22,12 @@ describe("work experience", () => {
     experienceData.forEach((experience) => {
       const monthDiff = getMonthDiff(experience.endDate || new Date(), experience.startDate);
 
-      cy.get("[data-cy=work-experience]")
-        .should("contain.text", experience.title)
-        .should("contain.text", experience.description);
+      cy.get("[data-cy=work-experience]").should("contain.text", experience.title);
+
+      // Description split into array for styling. Must contain all parts of description.
+      experience.description.forEach((part) => {
+        cy.get("[data-cy=work-experience]").should("contain.text", part);
+      });
 
       if (monthDiff >= 12) {
         cy.get("[data-cy=work-experience]").should(

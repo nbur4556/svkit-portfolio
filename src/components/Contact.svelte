@@ -1,14 +1,23 @@
 <script lang="ts">
-  import Card from "../components/Card.svelte";
-  import Link from "../components/Link.svelte";
+  import ContactDetails from "../components/ContactDetails.svelte";
+  import ContactForm from "../components/ContactForm.svelte";
+  import Card from "../components/UI/Card.svelte";
+  import PageContent from "../components/UI/PageContent.svelte";
+  import ImageContainer from "../components/UI/ImageContainer.svelte";
 </script>
 
-<Card headingClass="py-4 px-10" contentClass="p-10" testId="contact">
-  <h2 slot="heading" id="contact" class="text-2xl font-bold text-slate-100">Contact Me</h2>
+<PageContent class="lg:mb-lg">
+  <section class="flex lg:flex-row flex-col-reverse justify-between items-center gap-sm">
+    <ImageContainer
+      class="lg:h-xxl lg:visible invisible"
+      src="/images/mailbox.png"
+      alt="Mailbox full of letters shown protruding from a computer screen."
+    />
 
-  <ul class="my-4">
-    <li><Link href="mailto: nbur4556@gmail.com" external>nbur4556@gmail.com</Link></li>
-    <li><Link href="https://github.com/nbur4556" external /></li>
-    <li><Link href="https://www.linkedin.com/in/nick-burt/" external /></li>
-  </ul>
-</Card>
+    <Card class="lg:max-w-xxl w-full" classBody="text-white" testId="contact">
+      <h2 slot="heading" id="contact" class="text-2xl font-bold">{"> Send me a Message"}</h2>
+      <ContactForm />
+      <ContactDetails />
+    </Card>
+  </section>
+</PageContent>
