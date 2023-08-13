@@ -33,9 +33,7 @@ const sizes = {
   lg: "128px",
   xl: "256px",
   xxl: "512px",
-  //? Should we have a container-md?
   "container-lg": "1220px",
-  "container-sm": "300px", //TODO: find exact value for container sm
 };
 
 const pixelSizes = {
