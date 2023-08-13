@@ -13,17 +13,22 @@
 <svelte:window bind:scrollY />
 
 <!-- //TODO: Selected link gradient -->
-<nav class={`flex flex-row justify-center w-full fixed  ${bgColor}`} data-cy="nav-bar">
-  <section class="flex flex-row justify-between max-w-container-lg w-full">
+<nav class={`flex flex-row justify-center w-full fixed ${bgColor}`} data-cy="nav-bar">
+  <section class="flex flex-row justify-between max-w-container-lg w-full mx-xs">
     <ul
-      class={`flex flex-row gap-md ${margin} transition-spacing ease-in-out`}
+      class={[
+        "flex flex-row gap-xxs",
+        "transition-spacing ease-in-out text-xs",
+        "lg:gap-md lg:text-base",
+        margin,
+      ].join(" ")}
       data-cy="nav-bar-list"
     >
       {#each navigationRoutes as route}
         <li>
           <Link
             href={route.href}
-            styleClass={$page.url.hash === route.href
+            class={$page.url.hash === route.href
               ? `text-accent3-400`
               : "text-link-300 hover:text-link-200"}
             external={route.external}
@@ -35,11 +40,14 @@
       {/each}
     </ul>
 
-    <ul class={`${margin} transition-spacing ease-in-out`} data-cy="nav-bar-cta">
+    <ul
+      class={`${margin} transition-spacing ease-in-out lg:text-base text-xs`}
+      data-cy="nav-bar-cta"
+    >
       <li>
         <Link
           href={paths.contact}
-          styleClass="text-accent1-400 hover:text-accent1-200"
+          class="text-accent1-400 hover:text-accent1-200"
           testId="_Contact Me-link"
         >
           _Contact Me
