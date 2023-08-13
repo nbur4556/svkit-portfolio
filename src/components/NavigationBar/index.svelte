@@ -14,7 +14,7 @@
 
 <!-- //TODO: Selected link gradient -->
 <nav class={`flex flex-row justify-center w-full fixed ${bgColor}`} data-cy="nav-bar">
-  <section class="flex flex-row justify-between max-w-container-lg w-full lg:mx-0 mx-xs">
+  <section class="flex flex-row justify-between max-w-container-lg w-full mx-xs">
     <ul
       class={[
         "flex flex-row gap-xxs",

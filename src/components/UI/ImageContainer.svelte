@@ -6,5 +6,5 @@
 </script>
 
 <div class={`${className} overflow-hidden`}>
-  <img class="object-cover w-full h-full" {src} {alt} />
+  <img class="object-cover" {src} {alt} />
 </div>
