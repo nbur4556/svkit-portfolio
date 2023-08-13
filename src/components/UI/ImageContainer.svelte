@@ -1,10 +1,10 @@
 <script lang="ts">
   export let alt: string;
   export let src: string;
-  //TODO: Type as a Tailwind class if possible
-  export let classExt: string = "";
+  let className: string = "";
+  export {className as class};
 </script>
 
-<div class={`${classExt} overflow-hidden`}>
+<div class={`${className} overflow-hidden`}>
   <img class="object-cover w-full h-full" {src} {alt} />
 </div>
