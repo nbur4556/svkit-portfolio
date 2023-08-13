@@ -13,10 +13,15 @@
 <svelte:window bind:scrollY />
 
 <!-- //TODO: Selected link gradient -->
-<nav class={`flex flex-row justify-center w-full fixed  ${bgColor}`} data-cy="nav-bar">
-  <section class="flex flex-row justify-between max-w-container-lg w-full">
+<nav class={`flex flex-row justify-center w-full fixed ${bgColor}`} data-cy="nav-bar">
+  <section class="flex flex-row justify-between max-w-container-lg w-full lg:mx-0 mx-sm">
     <ul
-      class={`flex flex-row gap-md ${margin} transition-spacing ease-in-out`}
+      class={[
+        "flex flex-row",
+        "transition-spacing ease-in-out",
+        "lg:gap-md lg:text-md text-xs",
+        margin,
+      ].join(" ")}
       data-cy="nav-bar-list"
     >
       {#each navigationRoutes as route}
@@ -35,7 +40,7 @@
       {/each}
     </ul>
 
-    <ul class={`${margin} transition-spacing ease-in-out`} data-cy="nav-bar-cta">
+    <ul class={`${margin} transition-spacing ease-in-out lg:text-md text-xs`} data-cy="nav-bar-cta">
       <li>
         <Link
           href={paths.contact}

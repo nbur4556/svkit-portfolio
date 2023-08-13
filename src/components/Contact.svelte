@@ -6,7 +6,7 @@
   import ImageContainer from "../components/UI/ImageContainer.svelte";
 </script>
 
-<PageContent class="mb-lg">
+<PageContent class="lg:mb-lg">
   <section class="flex lg:flex-row flex-col-reverse justify-between items-center gap-sm">
     <ImageContainer
       class="lg:h-xxl lg:visible invisible"
