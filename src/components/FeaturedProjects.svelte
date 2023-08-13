@@ -14,7 +14,7 @@
 <section class="flex flex-col gap-md mb-lg" data-cy="featured-projects">
   <h2 id="featured" class="text-2xl text-white font-bold">{"> My Projects"}</h2>
 
-  <section class="flex lg:flex-row flex-col items-stretch gap-sm">
+  <section class="flex lg:flex-row flex-col items-stretch lg:gap-sm gap-xs">
     <!-- //TODO: Should navigate to website on click -->
     <!-- //TODO: Should display navigation to website text on hover -->
     <FeaturedProjectItem image={selected.image} />

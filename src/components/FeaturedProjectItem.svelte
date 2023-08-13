@@ -8,7 +8,7 @@
 
 <!-- //TODO: Should contain option for text on hover -->
 <section
-  class="w-full h-440px bg-cover bg-center rounded-2xl overflow-hidden"
+  class="w-full lg:h-440px bg-cover bg-center rounded-2xl overflow-hidden"
   style={`background-image:url(${image})`}
   data-cy="select-feature"
 >
