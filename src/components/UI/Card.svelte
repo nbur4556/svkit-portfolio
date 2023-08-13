@@ -7,7 +7,7 @@
 </script>
 
 <section
-  class={`flex flex-col gap-md lg:p-72px p-sm bg-dark rounded-3xl ${className}`}
+  class={`flex flex-col gap-md lg:px-72px px-sm py-72px bg-dark rounded-3xl ${className}`}
   data-cy={testId}
 >
   {#if $$slots.heading}

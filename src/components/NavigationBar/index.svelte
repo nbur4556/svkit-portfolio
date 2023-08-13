@@ -14,12 +14,12 @@
 
 <!-- //TODO: Selected link gradient -->
 <nav class={`flex flex-row justify-center w-full fixed ${bgColor}`} data-cy="nav-bar">
-  <section class="flex flex-row justify-between max-w-container-lg w-full lg:mx-0 mx-sm">
+  <section class="flex flex-row justify-between max-w-container-lg w-full lg:mx-0 mx-xs">
     <ul
       class={[
-        "flex flex-row",
-        "transition-spacing ease-in-out",
-        "lg:gap-md lg:text-md text-xs",
+        "flex flex-row gap-xxs",
+        "transition-spacing ease-in-out text-xs",
+        "lg:gap-md lg:text-base",
         margin,
       ].join(" ")}
       data-cy="nav-bar-list"
@@ -40,7 +40,10 @@
       {/each}
     </ul>
 
-    <ul class={`${margin} transition-spacing ease-in-out lg:text-md text-xs`} data-cy="nav-bar-cta">
+    <ul
+      class={`${margin} transition-spacing ease-in-out lg:text-base text-xs`}
+      data-cy="nav-bar-cta"
+    >
       <li>
         <Link
           href={paths.contact}

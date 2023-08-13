@@ -14,7 +14,7 @@
       alt="Mailbox full of letters shown protruding from a computer screen."
     />
 
-    <Card classBody="text-white" testId="contact">
+    <Card class="lg:max-w-xxl w-full" classBody="text-white" testId="contact">
       <h2 slot="heading" id="contact" class="text-2xl font-bold">{"> Send me a Message"}</h2>
       <ContactForm />
       <ContactDetails />
