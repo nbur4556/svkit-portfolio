@@ -6,7 +6,10 @@
   export { className as class };
 </script>
 
-<section class={`flex flex-col gap-md lg:p-72px p-sm bg-dark rounded-3xl ${className}`} data-cy={testId}>
+<section
+  class={`flex flex-col gap-md lg:p-72px p-sm bg-dark rounded-3xl ${className}`}
+  data-cy={testId}
+>
   {#if $$slots.heading}
     <div class="text-white" data-cy={`${testId}-heading`}>
       <slot name="heading" />

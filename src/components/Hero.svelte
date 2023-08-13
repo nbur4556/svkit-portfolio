@@ -1,4 +1,7 @@
-<section class="flex lg:flex-row flex-col-reverse lg:justify-between justify-center items-center h-screen" data-cy="hero">
+<section
+  class="flex lg:flex-row flex-col-reverse lg:justify-between justify-center items-center h-screen"
+  data-cy="hero"
+>
   <div class="flex flex-col justify-center">
     <img class="my-xs w-400px" src="/images/full-logo.png" alt="Nick Burt" />
     <h2 class="text-white text-2xl">I make things for the web</h2>

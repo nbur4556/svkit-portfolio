@@ -10,10 +10,8 @@
   </div>
   <ul class="ml-sm text-xs">
     <li>
-      <Link
-        styleClass="text-white hover:text-link-200"
-        href="mailto: nbur4556@gmail.com"
-        external>nbur4556@gmail.com</Link
+      <Link styleClass="text-white hover:text-link-200" href="mailto: nbur4556@gmail.com" external
+        >nbur4556@gmail.com</Link
       >
     </li>
     <li>

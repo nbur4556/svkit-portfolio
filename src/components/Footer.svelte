@@ -20,7 +20,13 @@
   ];
 </script>
 
-<footer class="flex flex-row justify-between mb-md max-w-container-lg w-full text-white">
+<footer
+  class={[
+    "flex flex-row justify-between items-center",
+    "mb-md max-w-container-lg text-white",
+    "lg:w-full gap-sm",
+  ].join(" ")}
+>
   <p>&copy Copyright 2023</p>
 
   <section class="flex flex-row gap-xxs">

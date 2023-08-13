@@ -2,7 +2,7 @@
   export let alt: string;
   export let src: string;
   let className: string = "";
-  export {className as class};
+  export { className as class };
 </script>
 
 <div class={`${className} overflow-hidden`}>
