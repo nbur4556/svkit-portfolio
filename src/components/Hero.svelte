@@ -1,5 +1,9 @@
 <section
-  class="flex lg:flex-row flex-col-reverse lg:justify-between justify-center items-center h-screen"
+  class={[
+    "flex flex-col-reverse justify-center items-center",
+    "h-screen",
+    "lg:flex-row lg:justify-between",
+  ].join(" ")}
   data-cy="hero"
 >
   <div class="flex flex-col justify-center">

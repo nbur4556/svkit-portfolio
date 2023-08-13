@@ -23,7 +23,7 @@
         <li>
           <Link
             href={route.href}
-            styleClass={$page.url.hash === route.href
+            class={$page.url.hash === route.href
               ? `text-accent3-400`
               : "text-link-300 hover:text-link-200"}
             external={route.external}
@@ -39,7 +39,7 @@
       <li>
         <Link
           href={paths.contact}
-          styleClass="text-accent1-400 hover:text-accent1-200"
+          class="text-accent1-400 hover:text-accent1-200"
           testId="_Contact Me-link"
         >
           _Contact Me
