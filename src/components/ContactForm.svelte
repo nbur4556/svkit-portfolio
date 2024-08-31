@@ -6,9 +6,12 @@
   const contactHandler: SubmitFunction = () => {
     progressMessage = "...sending";
     return async ({ result }) => {
+      // FIX: Failing to send message. Does this also happen in the build?
       if (result.type === "success") {
         progressMessage = "Message sent!";
       } else {
+        // TODO: Improve logging. Should be able to display logs in development but not in production
+        console.error(result);
         progressMessage = "Failed to send message";
       }
     };
