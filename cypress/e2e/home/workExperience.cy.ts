@@ -18,6 +18,7 @@ describe("work experience", () => {
 
   afterEach(() => unsubscribe());
 
+  // FIX: Test calculation incorrect
   it("contains entries for work experience", () => {
     experienceData.forEach((experience) => {
       const monthDiff = getMonthDiff(experience.endDate || new Date(), experience.startDate);

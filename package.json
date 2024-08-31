@@ -8,17 +8,17 @@
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "format": "prettier --write --plugin-search-dir=. .",
-    "test:open": "cypress open",
-    "test:run": "cypress run --env type=actual --browser electron",
-    "test:snapshot": "cypress run --env type=actual --browser electron --spec cypress/e2e/regression.cy.ts",
-    "test:update": "cypress run --env type=base --browser electron --spec cypress/e2e/regression.cy.ts"
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run --env type=actual --browser firefox",
+    "cypress:snapshot": "cypress run --env type=actual --browser firefox --spec cypress/e2e/regression.cy.ts",
+    "cypress:update": "cypress run --env type=base --browser firefox --spec cypress/e2e/regression.cy.ts"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "^1.0.0-next.406",
     "@types/nodemailer": "^6.4.9",
     "autoprefixer": "^10.4.14",
-    "cypress": "^12.11.0",
+    "cypress": "^13.14.1",
     "cypress-visual-regression": "^3.0.0",
     "nodemailer": "^6.9.4",
     "postcss": "^8.4.23",
