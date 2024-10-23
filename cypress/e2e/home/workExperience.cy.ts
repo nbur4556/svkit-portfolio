@@ -1,3 +1,5 @@
+import { Unsubscriber } from "svelte/store";
+
 import { experienceStore } from "../../../src/stores/experienceStore";
 import type { Experience } from "../../../src/stores/experienceStore";
 
@@ -7,10 +9,9 @@ const getMonthDiff = (end: Date, start: Date) => {
   return yearDiff * 12 + monthDiff;
 };
 
-//FIX: 202410-update-vulnerable-packages: failing tests
 describe("work experience", () => {
   let experienceData: Array<Experience>;
-  let unsubscribe;
+  let unsubscribe: Unsubscriber;
 
   beforeEach(() => {
     cy.visit("/#experience");

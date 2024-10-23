@@ -1,7 +1,8 @@
+import { Unsubscriber } from "svelte/store";
+
 import { projectStore } from "../../../src/stores/projectStore";
 import type { Project } from "../../../src/stores/projectStore";
 
-//FIX: 202410-update-vulnerable-packages: failing tests
 const testSelectProjectData = (project: Project) => {
   cy.get("[data-cy=select-feature]").should(
     "have.attr",
@@ -15,7 +16,7 @@ const testSelectProjectData = (project: Project) => {
 
 describe("featured projects", () => {
   let projectData: Array<Project>;
-  let unsubscribe;
+  let unsubscribe: Unsubscriber;
 
   beforeEach(() => {
     cy.visit("/#featured");
