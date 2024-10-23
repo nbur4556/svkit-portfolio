@@ -7,6 +7,7 @@ const getMonthDiff = (end: Date, start: Date) => {
   return yearDiff * 12 + monthDiff;
 };
 
+//FIX: 202410-update-vulnerable-packages: failing tests
 describe("work experience", () => {
   let experienceData: Array<Experience>;
   let unsubscribe;

@@ -1,6 +1,7 @@
 import { projectStore } from "../../../src/stores/projectStore";
 import type { Project } from "../../../src/stores/projectStore";
 
+//FIX: 202410-update-vulnerable-packages: failing tests
 const testSelectProjectData = (project: Project) => {
   cy.get("[data-cy=select-feature]").should(
     "have.attr",
