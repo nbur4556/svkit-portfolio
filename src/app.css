@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* FIX: No noticeable effect. Is it the background color that is causing the issue? */
+body {
+    background-color: "black";
+}
