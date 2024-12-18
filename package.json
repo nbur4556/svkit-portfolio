@@ -8,7 +8,7 @@
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "format": "prettier --write --plugin-search-dir=. .",
-    "test:open": "cypress open",
+    "test:open": "cypress open --env type=actual",
     "test:run": "cypress run --env type=actual --browser electron",
     "test:snapshot": "cypress run --env type=actual --browser electron --spec cypress/e2e/regression.cy.ts",
     "test:update": "cypress run --env type=base --browser electron --spec cypress/e2e/regression.cy.ts"
