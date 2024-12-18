@@ -1,3 +1,5 @@
+import { Unsubscriber } from "svelte/store";
+
 import { experienceStore } from "../../../src/stores/experienceStore";
 import type { Experience } from "../../../src/stores/experienceStore";
 
@@ -9,7 +11,7 @@ const getMonthDiff = (end: Date, start: Date) => {
 
 describe("work experience", () => {
   let experienceData: Array<Experience>;
-  let unsubscribe;
+  let unsubscribe: Unsubscriber;
 
   beforeEach(() => {
     cy.visit("/#experience");

@@ -1,3 +1,5 @@
+import { Unsubscriber } from "svelte/store";
+
 import { projectStore } from "../../../src/stores/projectStore";
 import type { Project } from "../../../src/stores/projectStore";
 
@@ -14,7 +16,7 @@ const testSelectProjectData = (project: Project) => {
 
 describe("featured projects", () => {
   let projectData: Array<Project>;
-  let unsubscribe;
+  let unsubscribe: Unsubscriber;
 
   beforeEach(() => {
     cy.visit("/#featured");
