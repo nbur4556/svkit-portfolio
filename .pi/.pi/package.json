@@ -1,0 +1,17 @@
+{
+  "name": "pi",
+  "version": "1.0.0",
+  "description": "pi extensions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typebox": "^1.1.38"
+  },
+  "dependencies": {
+    "@mariozechner/pi-coding-agent": "^0.73.1"
+  }
+}

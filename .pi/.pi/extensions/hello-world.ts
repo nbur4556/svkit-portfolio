@@ -3,17 +3,17 @@ import { Type } from "typebox";
 
 /**
  * 🚀 PI EXTENSIONS TUTORIAL & HELLO WORLD
- * 
- * This file serves as both a functional "Hello World" extension and a 
+ *
+ * This file serves as both a functional "Hello World" extension and a
  * quick-start guide for developing your own Pi extensions.
- * 
+ *
  * === WHERE TO PUT EXTENSIONS ===
  * - Project-local: `.pi/extensions/*.ts` (This file!)
  * - Global: `~/.pi/agent/extensions/*.ts`
- * 
- * Extensions in these directories are auto-discovered. You can hot-reload 
+ *
+ * Extensions in these directories are auto-discovered. You can hot-reload
  * them using the `/reload` command in the Pi TUI.
- * 
+ *
  * === HOW IT WORKS ===
  * Every extension must export a default function that receives the `ExtensionAPI` object.
  * You use this object to:
@@ -25,7 +25,6 @@ import { Type } from "typebox";
  */
 
 export default function (pi: ExtensionAPI) {
-  
   // ---------------------------------------------------------------------------
   // 1. EVENT LISTENERS
   // ---------------------------------------------------------------------------
@@ -54,12 +53,17 @@ export default function (pi: ExtensionAPI) {
     }),
     async execute(toolCallId, params, signal, onUpdate, ctx) {
       // onUpdate allows you to stream progress to the TUI while working
-      onUpdate?.({ 
-        content: [{ type: "text", text: `Generating a greeting for ${params.name}...` }] 
+      onUpdate?.({
+        content: [{ type: "text", text: `Generating a greeting for ${params.name}...` }],
       });
 
       return {
-        content: [{ type: "text", text: `Hello, ${params.name}! 🌟 This message comes from a custom Pi extension.` }],
+        content: [
+          {
+            type: "text",
+            text: `Hello, ${params.name}! 🌟 This message comes from a custom Pi extension.`,
+          },
+        ],
         details: { status: "success" },
       };
     },
@@ -74,13 +78,13 @@ export default function (pi: ExtensionAPI) {
     description: "Quickly say hello to the world",
     handler: async (args, ctx) => {
       const target = args || "world";
-      
+
       // You can use various UI components:
       // - confirm(): a yes/no dialog
       // - select(): a list selection
       // - input(): a text input field
       const confirmed = await ctx.ui.confirm("Greeting", `Do you want to say hello to ${target}?`);
-      
+
       if (confirmed) {
         ctx.ui.notify(`Hello ${target}! 🚀`, "success");
       } else {
