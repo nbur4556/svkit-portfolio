@@ -50,8 +50,13 @@ To provide a responsive, visually appealing portfolio that highlights the develo
 - Follow the component-based architecture in `src/components/`.
 - Base UI components in `src/components/UI/` should be kept generic and reusable.
 
+### Git Workflow
+- Git commit after completing a request.
+- **Never commit directly to the main branch.** If not already on a separate branch, create one before committing.
+
 ### Testing Workflow
 Visual regression is a first-class citizen in this project.
+
 1. **E2E Tests**: `yarn test:run`
 2. **Visual Regression**: `yarn test:snapshot`
 3. **Updating Snapshots**: `yarn test:update` (Only when visual changes are intentional).
