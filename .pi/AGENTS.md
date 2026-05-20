@@ -19,6 +19,8 @@ To provide a responsive, visually appealing portfolio that highlights the develo
     - `NavigationBar/`: Header and navigation logic.
     - `SVG/`: Custom SVG icons.
     - `UI/`: Base UI components like `Card.svelte`, `Link.svelte`, etc.
+        - `PageContent.svelte`: Wrapper component formatting as page content
+        - `PageSection.svelte`: Wrapper component formatting as page section
     - Other components like `Hero.svelte`, `FeaturedProjects.svelte`, `WorkExperience.svelte`, `Contact.svelte`.
 - **`routes/`**: SvelteKit file-based routing.
     - `+layout.svelte`: Global layout wrapper.
@@ -27,7 +29,7 @@ To provide a responsive, visually appealing portfolio that highlights the develo
 - **`stores/`**: Svelte stores for state management.
     - `projectStore.ts`: Contains the source of truth for projects data.
     - `experienceStore.ts`: Contains professional work experience data.
-- **`util/`**: Helper functions (e.g., `paths.ts`).
+- **`util/`**: Types and helper functions (e.g., `paths.ts`).
 
 ### `/static` - Static Assets
 - `/images`: Project screenshots and social icons.
