@@ -3,7 +3,6 @@
   export let direction: number = 1;
 </script>
 
-<!-- //! Why is direction not working? It was working before... -->
 <svg 
     width="34" 
     height="35" 
