@@ -16,3 +16,4 @@ node_modules
 /cypress/snapshots/diff
 
 .vscode
+/local
