@@ -19,15 +19,16 @@
     <pixels>large, chunky pixels</pixels>
     <era>8-bit retro arcade / early '90s videogame inspired</era>
     <shading>simple pixel shading with a limited color palette</shading>
+    <palette>blues, purples, whites, blacks, and greys only</palette>
   </style>
   <scene>
     <environment>minimal workspace with a subtle hacker atmosphere</environment>
     <mood>focused, cool, slightly mysterious, cyberpunk-leaning, nostalgic</mood>
-    <background>dark and uncluttered, with a few subtle glowing monitor accents or code-like shapes</background>
+    <background>dark and uncluttered, with subtle glowing accents and code-like shapes</background>
   </scene>
   <details>
-    <extras>optional faint neon glow, terminal-style screen light, tiny code fragments, moody lighting</extras>
-    <avoid>overly complex cyberpunk city, busy background, realistic rendering</avoid>
+    <extras>faint neon glow, terminal-style screen light, tiny code fragments, moody lighting</extras>
+    <avoid>reds, oranges, yellows, greens, busy background, realistic rendering</avoid>
   </details>
   <requirements>
     <use_case>website image</use_case>
