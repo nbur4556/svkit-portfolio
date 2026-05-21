@@ -1,0 +1,26 @@
+<prompt>
+  <image_type>website hero illustration</image_type>
+  <subject>programmer working on a laptop</subject>
+  <composition>
+    <view>straight-on front view</view>
+    <laptop_visibility>show the back of the laptop toward the viewer</laptop_visibility>
+    <camera_angle>no angle, no perspective tilt</camera_angle>
+    <framing>centered and symmetrical</framing>
+  </composition>
+  <style>
+    <format>pixel art</format>
+    <resolution>very low resolution</resolution>
+    <pixels>large, chunky pixels</pixels>
+    <era>8-bit retro arcade / early '90s Nintendo-inspired</era>
+    <shading>simple pixel shading with a limited color palette</shading>
+  </style>
+  <scene>
+    <environment>minimal workspace</environment>
+    <mood>focused, clean, nostalgic, game-like</mood>
+    <background>simple and uncluttered so the subject reads clearly</background>
+  </scene>
+  <requirements>
+    <use_case>website image</use_case>
+    <clarity>strong silhouette and readable subject at small sizes</clarity>
+  </requirements>
+</prompt>
