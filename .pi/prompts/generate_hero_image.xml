@@ -1,6 +1,12 @@
 <prompt>
   <image_type>website hero illustration</image_type>
   <subject>programmer working on a laptop</subject>
+  <character>
+    <hair>shoulder-length hair</hair>
+    <facial_hair>goatee</facial_hair>
+    <glasses>yes</glasses>
+    <expression>focused and cool</expression>
+  </character>
   <composition>
     <view>straight-on front view</view>
     <laptop_visibility>show the back of the laptop toward the viewer</laptop_visibility>
