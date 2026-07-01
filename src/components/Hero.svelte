@@ -13,7 +13,7 @@
   <div>
     <img
       class="w-688px"
-      src="/images/hero.png"
+      src="/images/undraw_code-thinking.svg"
       alt="A programmer working at his computer, drinking coffee. His cat is sleeping next to him on a book."
     />
   </div>
