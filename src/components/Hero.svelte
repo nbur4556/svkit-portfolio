@@ -13,7 +13,6 @@
   <div>
     <!--TODO: graphics-update: I should attribute unDraw if they want it, even if not required -->
     <!--TODO: graphics-update: Resize image -->
-    <!--TODO: graphics-update: Image should have a white edge, or otherwise pop from the website background-->
     <!--TODO: graphics-update: formatting for mobile -->
     <img
       class="w-688px"
