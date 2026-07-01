@@ -11,6 +11,7 @@
     <h2 class="text-white text-2xl">I make things for the web</h2>
   </div>
   <div>
+    <!--TODO: graphics-update I should attribute unDraw if they want it, even if not required -->
     <img
       class="w-688px"
       src="/images/undraw_code-thinking.svg"
