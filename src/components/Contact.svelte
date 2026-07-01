@@ -7,8 +7,9 @@
 </script>
 
 <PageContent class="lg:mb-lg">
-  <section class="flex lg:flex-row flex-col-reverse justify-between items-center gap-sm">
-    <!-- TODO: graphics-update: fix alignment -->
+  <section class="flex lg:flex-row flex-col-reverse justify-between items-center gap-xl">
+    <!-- TODO: graphics-update: responsive -->
+    <!-- TODO: graphics-update: cutting off at bottom -->
     <ImageContainer
       class="lg:h-xxl lg:visible invisible"
       src="/images/undraw_message-sent.svg"
