@@ -23,7 +23,7 @@
 <footer
   class={[
     "flex flex-row justify-between items-center",
-    "mb-md max-w-container-lg text-white",
+    "mx-xxs mb-md max-w-container-lg text-white",
     "lg:w-full gap-sm",
   ].join(" ")}
 >
