@@ -8,10 +8,11 @@
 
 <PageContent class="lg:mb-lg">
   <section class="flex lg:flex-row flex-col-reverse justify-between items-center gap-sm">
+    <!-- TODO: graphics-update: fix alignment -->
     <ImageContainer
       class="lg:h-xxl lg:visible invisible"
-      src="/images/mailbox.png"
-      alt="Mailbox full of letters shown protruding from a computer screen."
+      src="/images/undraw_message-sent.svg"
+      alt="Message shown as a paper plane with a checkmark"
     />
 
     <Card class="lg:max-w-xxl w-full" classBody="text-white" testId="contact">
