@@ -7,6 +7,8 @@ node_modules
 .env.*
 !.env.example
 
+.local
+
 # Cypress
 /cypress/videos
 /cypress/screenshots
@@ -14,5 +16,3 @@ node_modules
 /cypress/snapshots/diff
 
 .vscode
-
-/.local

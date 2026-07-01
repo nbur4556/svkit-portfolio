@@ -2,14 +2,16 @@
 
 const colors = {
   accent1: {
+    //lightblue
     200: "#70FFFF",
     300: "#47FFFF",
     400: "#0FFEFF", //default
     500: "#00F5F5",
     600: "#00CCCC",
   },
-  accent2: "#1960F7",
+  accent2: "#1960F7", //darkblue
   accent3: {
+    //pink
     300: "#FE48FE",
     400: "#FE15FE", //default
   },
