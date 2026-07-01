@@ -7,17 +7,15 @@
 </script>
 
 <PageContent class="lg:mb-lg">
-  <!-- TODO: would it be better to set each items basis instead of trying to adjust by size? -->
   <section class="flex lg:flex-row flex-col-reverse justify-between items-center gap-lg">
-    <!-- TODO: graphics-update: responsive -->
-    <!-- TODO: graphics-update: cutting off at bottom -->
+    <!--TODO: graphics-update: I should attribute unDraw if they want it, even if not required -->
     <ImageContainer
-      class="lg:h-xxl lg:visible invisible"
+      class="lg:visible invisible"
       src="/images/undraw_message-sent.svg"
       alt="Message shown as a paper plane with a checkmark"
     />
 
-    <Card class="lg:max-w-xxxl w-full" classBody="text-white" testId="contact">
+    <Card class="w-full" classBody="text-white" testId="contact">
       <h2 slot="heading" id="contact" class="text-2xl font-bold">{"> Send me a Message"}</h2>
       <ContactForm />
       <ContactDetails />
