@@ -24,7 +24,7 @@ Clone this repository and run `yarn install` to install the dependencies.
 
 ### Agents
 
-Prompting, context, and extensions are provided for the [Pi Coding Agent](https://pi.dev/). Launch your Pi agent from the `.pi/` directory.
+Prompting, context, and extensions are provided for the [Pi Coding Agent](https://pi.dev/).
 
 ### Testing
 
