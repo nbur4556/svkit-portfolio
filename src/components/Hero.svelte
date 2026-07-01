@@ -15,7 +15,7 @@
     <!--TODO: graphics-update: Resize image -->
     <!--TODO: graphics-update: formatting for mobile -->
     <img
-      class="w-688px"
+      class="w-688px pb-sm"
       src="/images/undraw_code-thinking.svg"
       alt="A programmer working at his computer, drinking coffee. His cat is sleeping next to him on a book."
     />
