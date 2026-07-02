@@ -1,0 +1,37 @@
+<prompt>
+  <image_type>website hero illustration</image_type>
+  <subject>programmer working on a laptop</subject>
+  <character>
+    <hair>shoulder-length hair</hair>
+    <facial_hair>goatee</facial_hair>
+    <glasses>yes</glasses>
+    <expression>focused and cool</expression>
+  </character>
+  <composition>
+    <view>straight-on front view</view>
+    <laptop_visibility>show the back of the laptop toward the viewer</laptop_visibility>
+    <camera_angle>no angle, no perspective tilt</camera_angle>
+    <framing>centered and symmetrical</framing>
+  </composition>
+  <style>
+    <format>pixel art</format>
+    <resolution>very low resolution</resolution>
+    <pixels>large, chunky pixels</pixels>
+    <era>8-bit retro arcade / early '90s videogame inspired</era>
+    <shading>simple pixel shading with a limited color palette</shading>
+    <palette>blues, purples, whites, blacks, and greys only</palette>
+  </style>
+  <scene>
+    <environment>minimal workspace with a subtle hacker atmosphere</environment>
+    <mood>focused, cool, slightly mysterious, cyberpunk-leaning, nostalgic</mood>
+    <background>dark and uncluttered, with subtle glowing accents and code-like shapes</background>
+  </scene>
+  <details>
+    <extras>faint neon glow, terminal-style screen light, tiny code fragments, moody lighting</extras>
+    <avoid>reds, oranges, yellows, greens, busy background, realistic rendering</avoid>
+  </details>
+  <requirements>
+    <use_case>website image</use_case>
+    <clarity>strong silhouette and readable subject at small sizes</clarity>
+  </requirements>
+</prompt>

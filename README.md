@@ -22,6 +22,10 @@ Clone this repository and run `yarn install` to install the dependencies.
 
 ## Development
 
+### Agents
+
+Prompting, context, and extensions are provided for the [Pi Coding Agent](https://pi.dev/).
+
 ### Testing
 
 This repository supports both end-to-end and visual regression testing through Cypress. Before deploying to production, feature branches must pass each test. Test commands include:
@@ -63,9 +67,10 @@ A pull request should be made to the _staging_ branch. Once approved, Vercel wil
 
 ## Technologies
 
-- SvelteKit
-- Tailwind
-- Cypress
+- [SvelteKit](https://svelte.dev/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Cypress](https://www.cypress.io)
+- [Pi Coding Agent](https://pi.dev/)
 
 ## Contact
 
